@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.menu-tab {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer;
+  padding-bottom: 8px; /* spacing between text and line */
+}
+
+.menu-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #DDC104; /* Yellow line */
+}
+
