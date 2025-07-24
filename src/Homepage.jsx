@@ -1,6 +1,6 @@
 import React from 'react'
 import Detail from './Component/Detail'
-import Map from './Component/map'
+import Map from './Component/Map'
 import Sidebar from './Component/Sidebar'
 
 const Homepage = () => {
