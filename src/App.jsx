@@ -15,15 +15,14 @@ import Penalty from './Component/Penalty';
 import Report from './Component/Report';
 import ReferralTree from './Component/ReferralTree';
 import DriverHistory from './Component/DriverHistory';
-// import LiveLocation from './Component/LiveLocation';
+
 
 const App = () => {
   return (
     <Router>
       <div className="bg-[#013220] text-[#DDC104] min-h-screen">
         <Navbar />       
-        {/* <div > */}
-          {/* <Sidebar />  */}
+      
           <div className="min-h-screen">
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -39,10 +38,10 @@ const App = () => {
               <Route path="/penalty" element={<Penalty />} />
               <Route path="/report" element={<Report />} />
               <Route path="/referraltree" element={<ReferralTree/>} />
-              {/* <Route path="/livelocation" element={<LiveLocation/>} /> */}
+            
             </Routes>
           </div>
-        {/* </div> */}
+      
       </div>
     </Router>
   );

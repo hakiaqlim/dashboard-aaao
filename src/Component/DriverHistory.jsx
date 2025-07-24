@@ -1,9 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
-import { TbEdit } from "react-icons/tb";
-import { RiDeleteBinLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
 import DriverDetailnav from "./DriverDetailnav";
 
 const data = [

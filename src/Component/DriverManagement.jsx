@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { TbEdit } from "react-icons/tb";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
+
 
 const data = [
   {
@@ -38,7 +38,6 @@ const DriverManagement = () => {
     
         <div className="flex min-h-screen">
       <Sidebar/>
-{/* <Navbar/> */}
 <div className='flex-1'>
        
           <table className="w-full text-sm text-left">

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowLeft, FaClock } from "react-icons/fa";
-import Navbar from "./Navbar";
 import { TiArrowBackOutline } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
@@ -38,10 +37,9 @@ const Notifications = () => {
   return (
     
     <div className="  bg-[#13220]  min-h-screen ">
-      {/* ml-[310px] */}
-      {/* <Navbar/> */}
+    
       <div className="p-6 relative">
-        {/* Back Button */}
+      
       
   <div className="flex items-center gap-2 py-4">
     <Link to="/" className="flex items-center gap-2">
