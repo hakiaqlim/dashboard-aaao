@@ -18,11 +18,10 @@ import Livelocation from './Component/Livelocation';
 import ChatDetail from './Component/ChatDetail';
 import CustomerManagement from './Component/CustomerManagement';
 import CustomerProfile from './Component/CustomerProfile';
-import CustomerMonitoring from './Component/CustomerMonitoring'
 import CustomerHistory from './Component/CustomerHistory';
 import CustomerEarningPayout from './Component/CustomerEarningPayout';
 import CustomerRatings from './Component/CustomerRating';
-import CustomerPenalty from './Component/CustomerPenalty';
+
 // Step 1: Move Layout outside of App
 const Layout = ({ children }) => {
   const location = useLocation();
