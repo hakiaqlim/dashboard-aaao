@@ -1,5 +1,5 @@
 import React from 'react'
-import DriverDetailnav from './DriverDetailnav'
+import CustomerDetailnav from './CustomerDetailnav'
 const data = [
   {
     image:'',
@@ -17,10 +17,10 @@ const data = [
   },
 ]
 
-const Ratings = () => {
+const CustomerRatings = () => {
   return (
     <div>
-      <DriverDetailnav/>
+      <CustomerDetailnav/>
       <div className='px-8 py-6'>
 <div className=''>
 
@@ -58,4 +58,4 @@ const Ratings = () => {
   )
 }
 
-export default Ratings
+export default CustomerRatings

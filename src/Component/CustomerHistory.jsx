@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DriverDetailnav from "./DriverDetailnav";
+import CutomerDetailnav from "./CustomerDetailnav";
 
 const data = [
   {
@@ -32,11 +32,11 @@ const data = [
   },
 ];
 
-const DriverHistory = () => {
+const CustomerHistory = () => {
   return (
     <>
         <div>    
-  <DriverDetailnav/> 
+  <CutomerDetailnav/> 
 <div className=' pt-4'>
           <table className="w-full text-sm text-left">
             <thead>
@@ -78,4 +78,4 @@ const DriverHistory = () => {
   );
 };
 
-export default DriverHistory;
+export default CustomerHistory;

@@ -1,8 +1,9 @@
 import React from "react";
-import { FaArrowLeft, FaClock } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 import { TiArrowBackOutline } from "react-icons/ti";
-import { Link } from "react-router-dom";
 
+import Sidebar from './Sidebar'
+import { Link } from "react-router-dom";
 const notifications = [
   {
     id: 1,
@@ -36,17 +37,16 @@ const notifications = [
 const Notifications = () => {
   return (
     
-    <div className="  bg-[#13220]  min-h-screen ">
-    
-      <div className="p-6 relative">
-      
-      
+    <div className="flex  bg-[#13220]  min-h-screen ">
+   
+      <Sidebar/>
+       {/* <div className="">  */}
+      <div className="flex-1 p-6 relative">
   <div className="flex items-center gap-2 py-4">
-    <Link to="/" className="flex items-center gap-2">
+    <Link to="/" className='flex items-center gap-2'>
       <TiArrowBackOutline size={30} className="cursor-pointer text-lg" />
       <span className="text-lg font-semibold">Back</span>
     </Link>
-  
 </div>
 
 
@@ -110,6 +110,7 @@ const Notifications = () => {
       </div>
     </div>
     </div>
+    // </div>
   );
 };
 

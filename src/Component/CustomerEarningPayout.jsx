@@ -1,5 +1,5 @@
 import React from 'react'
-import DriverDetailnav from './DriverDetailnav';
+import CustomerDetailnav from './CustomerDetailnav';
 import { Link } from 'react-router-dom';
 
 const data = [
@@ -26,11 +26,11 @@ const data = [
   },
 ];
 
-const EarningsAndPayouts = () => {
+const CustomerEarningPayout = () => {
   return (
     <>
       <div>    
-        <DriverDetailnav />
+        <CustomerDetailnav />
         <div className='pt-4'>
           <table className="w-full text-sm text-left table-fixed">
             <thead>
@@ -51,7 +51,7 @@ const EarningsAndPayouts = () => {
                   <td className="w-[20%] px-4 py-3 text-center">{item.payment}</td>
                   <td className="w-[20%] px-4 py-3">
                     <div className="flex items-center gap-3 justify-center">
-                      <Link to={'/driverprofile'} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                      <Link to={'/customerprofile'} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
                         {item.action}
                       </Link>
                     </div>
@@ -66,4 +66,4 @@ const EarningsAndPayouts = () => {
   );
 };
 
-export default EarningsAndPayouts;
+export default CustomerEarningPayout;

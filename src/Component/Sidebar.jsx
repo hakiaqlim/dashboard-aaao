@@ -47,14 +47,16 @@ const Sidebar = () => {
           <span>Dispatch Center</span>
         </Link>
 
-        <Link to='/customermanag' className={linkClasses('/customermanag')}>
-          <MdVerifiedUser size={20} />
-          <span>Customer Manag...</span>
-        </Link>
+       
 
         <Link to='/drivermanagement' className={linkClasses('/drivermanagement')}>
           <MdRequestPage size={20} />
           <span>Driver Management</span>
+        </Link>
+        
+         <Link to='/customermanagement' className={linkClasses('/customermanagement')}>
+          <MdVerifiedUser size={20} />
+          <span>Customer Manag...</span>
         </Link>
 
         <Link to='/careermanagement' className={linkClasses('/careermanagement')}>
@@ -75,7 +77,7 @@ const Sidebar = () => {
           <RiWallet3Fill size={20} />
           <span>Wallet & Panel</span>
         </Link>
-        <Link to='/monitor' className={linkClasses('/monitor')}>
+        <Link to='/chatdetail' className={linkClasses('/chatdetail')}>
           <TbMessageDots size={20} />
           <p>Monitor <span className='text-sm'>(Chats & Activity)</span></p>
         </Link>

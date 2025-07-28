@@ -18,4 +18,28 @@
   width: 100%;
   background-color: #DDC104; /* Yellow line */
 }
+.menu-tab.linebelow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #2F501C; /* Yellow line */
+}
+
+.btn-active{
+  background-color: yellow;
+  border-radius: 8px;
+  color: black;
+  padding: 5px;
+ 
+}
+.btn-inactive{
+  border: 1px solid yellow;
+  border-radius:8px;
+  padding:5px;
+  color:yellow;
+}
 

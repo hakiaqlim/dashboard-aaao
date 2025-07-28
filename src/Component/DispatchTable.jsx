@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegEye } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const DispatchTable = () => {
@@ -54,13 +55,10 @@ const DispatchTable = () => {
 </td>
         <td className='text-sm px-4 py-2'>{item.status}</td>
         <td className='px-4 py-2 flex justify-center'>
-  <button
-   
-    className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-black hover:bg-yellow-300 transition-all whitespace-nowrap'
-  >
+  <Link to={'/livelocation'} className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-black hover:bg-yellow-300 transition-all whitespace-nowrap'>
     <FaRegEye className='text-sm' />
     {item.action}
-  </button>
+  </Link>
 </td>
     </tr>
     ))}

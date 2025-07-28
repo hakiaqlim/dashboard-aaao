@@ -2,7 +2,7 @@ import React from 'react'
 import { TiArrowBackOutline } from 'react-icons/ti';
 import { Link, useLocation } from 'react-router-dom'
 
-const DriverDetailnav = () => {
+const CustomerDetailnav = () => {
       const location = useLocation()
     const linkClass = (path) => {
   return `menu-tab ${location.pathname === path ? 'active' : ''}`;
@@ -17,36 +17,34 @@ const DriverDetailnav = () => {
 </div>
    
    <div className='flex justify-between items-center border-b border-yellow-400 '>
-  <Link to={'/driverprofile'} className={linkClass('/driverprofile')}>
+  <Link to={'/customerprofile'} className={linkClass('/customerprofile')}>
     Profile
     </Link>
     <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/drivermonitoring'} className={linkClass('/drivermonitoring')}>
-    Monitoring
-    </Link>
-    <div className='w-[2px] h-3 bg-yellow-400'></div>
     
-    <Link to={'/driverhistory'} className={linkClass('/driverhistory')}>
+    
+    <Link to={'/customerhistory'} className={linkClass('/customerhistory')}>
     History
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/earningandpayouts'} className={linkClass('/earningandpayouts')}>
+    <Link to={'/customerearningpayout'} className={linkClass('/customerearningpayout')}>
    Earning & Payouts
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/ratings'} className={linkClass('/ratings')}>
+    <Link to={'/customermlm'} className={linkClass('/customermlm')}>
+   MLM
+    </Link>
+        <div className='w-[2px] h-3 bg-yellow-400'></div>
+    <Link to={'/customerrating'} className={linkClass('/customerrating')}>
    Ratings
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/penalty'} className={linkClass('/penalty')}>
-   Penalty
+   
+    <Link to={'/customerreport'} className={linkClass('/customerreport')}>
+   Complain
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/report'} className={linkClass('/report')}>
-   Report
-    </Link>
-        <div className='w-[2px] h-3 bg-yellow-400'></div>
-    <Link to={'/referraltree'} className={linkClass('referraltree')}>
+    <Link to={'/customerreferraltree'} className={linkClass('customerreferraltree')}>
    Referral Tree
     </Link>
 </div>
@@ -54,4 +52,4 @@ const DriverDetailnav = () => {
   )
 }
 
-export default DriverDetailnav
+export default CustomerDetailnav
