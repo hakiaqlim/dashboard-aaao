@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const data = [
   {
@@ -52,10 +53,29 @@ const proposalQueue = [
 ]
 
 const MarketPlaceControl = () => {
+  const location = useLocation()
+  const linkClass = (path) => {
+  return `menu-tab ${location.pathname === path ? 'active' : ''}`;
+};
   return (
-    <div className="py-8">
+    <div className="">
+<div className=" border-b border-yellow-300">
+
+         <div className="flex justify-between w-1/2 p-2 ">
+        <Link to="/proposalmanagement" className={linkClass('/proposalmanagement')}>
+          Proposal Management
+        </Link>
+        <Link to="/agreementrecord" className={linkClass('/agreementrecord')}>
+          Agreement Generation & Record
+        </Link>
+        <Link to="/marketplacecontrol" className={linkClass('/marketplacecontrol')}>
+          Marketplace Control
+        </Link>
+      </div>
+      </div>
+
       {/* Card List */}
-      <div className="flex justify-around items-center flex-wrap gap-4">
+      <div className="flex py-8 justify-around items-center flex-wrap gap-4">
         {data.map((item, index) => (
           <div
             key={index}
