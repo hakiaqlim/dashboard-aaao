@@ -46,11 +46,19 @@ const DriverProfile = () => {
 <div>
   <DriverDetailnav/>
 </div>
-
+{/* Sort by month */}
+<div className='flex justify-end w-2/3 pt-8'>
+  <label htmlFor="">Sort By:</label>
+<select name="" id="" className='bg-[#013220]'>
+  <option value="Month">Month</option>
+  <option value="year">Year</option>
+</select>
+</div>
       {/* Profile Top Section */}
-      <div className="mt-8 flex  items-center justify-around w-[90%] mx-auto">
+      <div className=" flex  items-center justify-around w-[90%] mx-auto">
         {/* Stats */}
         <div className="grid grid-cols-3 gap-10  w-[70%]">
+          
             {data.map((item, index)=>(
                 
 <div key={index} className="shadow-xl p-4 rounded shadow-black outline outline-black/20">
@@ -77,7 +85,7 @@ const DriverProfile = () => {
       </div>
 
     <div className='flex justify-center mt-6'>
-  <div className='border border-yellow-300 rounded-xl px-8 py-4  w-[80%]'>
+  <div className='border border-yellow-300 rounded-xl px-8   w-[80%]'>
     {driverdata.map((item, index) => (
       <div key={index} className='mb-10'>
         <h2 className='text-xl font-bold mb-4'>{item.heading}</h2>

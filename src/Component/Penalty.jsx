@@ -24,7 +24,16 @@ const Penalty = () => {
   const [open, setOpen] = useState('issuewarn')
  
   return (
-    <div>    
+    <div> 
+      {/* sort by high */}
+       <div className='flex text-sm font-semibold justify-end pr-4 '>
+  <label htmlFor="">Sort By:</label>
+<select name="" id="" className='bg-[#013220]'>
+  <option value="high">High</option>
+  <option value="low">Low</option>
+</select>
+</div>
+
       <DriverDetailnav />
 
       <div className="flex justify-center items-center gap-32 mt-8">

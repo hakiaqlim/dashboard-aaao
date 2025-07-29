@@ -8,21 +8,21 @@ const data = [
     time: '11:00',
     amount: 100,
     payment: 'Bank:ABM Bank Abu dhabi',
-    action: "View",
+   
   },
   {
     date: '21/July/2025',
     time: '11:00',
     amount: 100,
    payment: 'Bank:ABM Bank Abu dhabi',
-    action: "View",
+    
   },
   {
     date: '21/July/2025',
     time: '11:00',
     amount: 100,
    payment: 'Bank:ABM Bank Abu dhabi',
-    action: "View",
+  
   },
 ];
 
@@ -51,9 +51,9 @@ const EarningsAndPayouts = () => {
                   <td className="w-[20%] px-4 py-3 text-center">{item.payment}</td>
                   <td className="w-[20%] px-4 py-3">
                     <div className="flex items-center gap-3 justify-center">
-                      <Link to={'/driverprofile'} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                        {item.action}
-                      </Link>
+                      <button className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                       View
+                      </button>
                     </div>
                   </td>
                 </tr>

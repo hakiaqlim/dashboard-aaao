@@ -20,7 +20,16 @@ const data = [
 const Ratings = () => {
   return (
     <div>
+{/* sort by high */}
+      <div className='flex text-sm font-semibold justify-end pr-4 '>
+  <label htmlFor="">Sort By:</label>
+<select name="" id="" className='bg-[#013220]'>
+  <option value="high">High</option>
+  <option value="low">Low</option>
+</select>
+</div>
       <DriverDetailnav/>
+      
       <div className='px-8 py-6'>
 <div className=''>
 

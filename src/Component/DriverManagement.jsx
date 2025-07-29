@@ -12,7 +12,7 @@ const data = [
     phone: "+92303111222444",
     vehicletype: "Toyota Corolla",
     status: "Active",
-    action: "View",
+  
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ const data = [
     phone: "+92303111222444",
     vehicletype: "Toyota Corolla",
     status: "Active",
-    action: "View",
+    
   },
   {
     id: 1,
@@ -28,7 +28,7 @@ const data = [
     phone: "+92303111222444",
     vehicletype: "Toyota Corolla",
     status: "Active",
-    action: "View",
+   
   },
 ];
 
@@ -65,7 +65,7 @@ const DriverManagement = () => {
                         <TbEdit size={16} />
                       </button>
                       <Link to={'/driverprofile'} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                        {item.action}
+                        View
                       </Link>
                       <button className="border border-yellow-400 p-2 rounded-full text-yellow-500">
                         <RiDeleteBinLine size={16} />

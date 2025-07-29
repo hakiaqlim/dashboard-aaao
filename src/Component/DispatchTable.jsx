@@ -11,7 +11,7 @@ const DispatchTable = () => {
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
             status:'Active',
-            action:'Live Location'
+           
         },
         {
             id:1,
@@ -19,7 +19,7 @@ const DispatchTable = () => {
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
             status:'Active',
-            action:'Live Location'
+           
         },
         {
             id:1,
@@ -27,7 +27,7 @@ const DispatchTable = () => {
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
             status:'Active',
-            action:'Live Location'
+            
         },
     ]
   return (
@@ -57,7 +57,7 @@ const DispatchTable = () => {
         <td className='px-4 py-2 flex justify-center'>
   <Link to={'/livelocation'} className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-black hover:bg-yellow-300 transition-all whitespace-nowrap'>
     <FaRegEye className='text-sm' />
-    {item.action}
+    Live Location
   </Link>
 </td>
     </tr>

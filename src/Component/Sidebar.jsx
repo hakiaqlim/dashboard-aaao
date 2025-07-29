@@ -59,7 +59,7 @@ const Sidebar = () => {
           <span>Customer Manag...</span>
         </Link>
 
-        <Link to='/careermanagement' className={linkClasses('/careermanagement')}>
+        <Link to='/proposalmanagement' className={linkClasses('/proposalmanagement')}>
   <div className='flex items-center gap-2'>
     <div className='relative w-6 h-6'>
       <FaBriefcase size={16} className='absolute top-0 left-1/2 -translate-x-1/2' />

@@ -9,8 +9,8 @@ const CustomerDetailnav = () => {
 };
   return (
     <div className='px-10'>
-<div className="flex items-center gap-2 py-4">
-    <Link to="/drivermanagement" className='flex items-center gap-2'>
+<div className="flex items-center gap-2 pb-6">
+    <Link to="/customermanagement" className='flex items-center gap-2'>
       <TiArrowBackOutline size={30} className="cursor-pointer text-lg" />
       <span className="text-lg font-semibold">Back</span>
     </Link>
@@ -40,7 +40,7 @@ const CustomerDetailnav = () => {
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>
    
-    <Link to={'/customerreport'} className={linkClass('/customerreport')}>
+    <Link to={'/customercomplain'} className={linkClass('/customercomplain')}>
    Complain
     </Link>
         <div className='w-[2px] h-3 bg-yellow-400'></div>

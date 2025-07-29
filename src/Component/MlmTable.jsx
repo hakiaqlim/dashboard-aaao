@@ -36,7 +36,7 @@ const [showPopup, setShowPopup] = useState(null)
     //     `border border-yellow-400 p-2 text-black ${location.pathname === path ? 'bg-yellow-400 p-2' : 'hover:bg-yellow-200 hover:text-black'}`
     // }
   return (
-    <div>
+    <div className='w-[85%] mx-auto'>
       <h2 className="text-lg font-semibold m-6">DDR Balance: $1000</h2>
       <div className='flex gap-20 ml-6 my-3'>
         <button className='bg-yellow-400 p-2 text-black'>Level 1</button>

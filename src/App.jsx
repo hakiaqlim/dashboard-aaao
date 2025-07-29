@@ -21,6 +21,11 @@ import CustomerProfile from './Component/CustomerProfile';
 import CustomerHistory from './Component/CustomerHistory';
 import CustomerEarningPayout from './Component/CustomerEarningPayout';
 import CustomerRatings from './Component/CustomerRating';
+import CustomerMLM from './Component/CustomerMLM';
+import CustomerComplain from './Component/CustomerComplain';
+import ProposalManagement from './Component/CareerManagment/ProposalManagement';
+import AgreementRecord from './Component/CareerManagment/AgreementsRecord';
+import MarketPlaceControl from './Component/CareerManagment/MarketPlaceControl';
 
 // Step 1: Move Layout outside of App
 const Layout = ({ children }) => {
@@ -56,14 +61,18 @@ const AppRoutes = () => {
         <Route path="/report" element={<Report />} />
         <Route path="/referraltree" element={<ReferralTree />} />
 
-        {/* client management */}
+        {/* customer management */}
         <Route path='/customermanagement' element={<CustomerManagement/>}/>
         <Route path="/customerprofile" element={<CustomerProfile />} />
         <Route path="/customerhistory" element={<CustomerHistory />} />
         <Route path="/customerearningpayout" element={<CustomerEarningPayout />} />
+        <Route path="/customermlm" element={<CustomerMLM />} />
         <Route path="/customerrating" element={<CustomerRatings />} />
-       
-
+        <Route path="/customercomplain" element={<CustomerComplain />} />
+       {/* Career Management */}
+<Route path="proposalmanagement" element={<ProposalManagement/>}/>
+<Route path="agreementrecord" element={<AgreementRecord/>}/>
+<Route path="marketplacecontrol" element={<MarketPlaceControl/>}/>
       </Routes>
     </Layout>
   );

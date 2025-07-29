@@ -53,7 +53,7 @@ const DriverHistory = () => {
             <tbody>
               {data.map((item, index) => (
                 <tr key={index} >
-                  <td className="px-3 py-3">00{item.id}</td>
+                  <td className="px-4 py-3">00{item.id}</td>
                   <td className="px-4 py-3">{item.date}</td>
                   <td className="px-4 py-3 r">{item.type}</td>
                   <td className="px-4 py-3">{item.name}</td>
@@ -62,9 +62,9 @@ const DriverHistory = () => {
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3 justify-center">
                   
-                      <Link to={'/driverprofile'} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                        {item.action}
-                      </Link>
+                      <button className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                       View
+                      </button>
                     
                     </div>
                   </td>

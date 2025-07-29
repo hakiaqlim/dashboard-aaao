@@ -1,5 +1,7 @@
 import React from 'react'
 import CustomerDetailnav from './CustomerDetailnav'
+
+import DateRange from './DateRange';
 const data = [
   {
     image:'',
@@ -17,17 +19,30 @@ const data = [
   },
 ]
 
+
+
+
+
+
 const CustomerRatings = () => {
-  return (
-    <div>
+
+ 
+   return (
+     <div className="text-yellow-400 w-full pt-2 px-2">
+       
+       {/* Date Picker & Sort */}
+      
       <CustomerDetailnav/>
       <div className='px-8 py-6'>
-<div className=''>
 
-      <h2 className='font-semibold'>Ratings</h2>
-      <span>⭐⭐⭐⭐⭐</span>
+<div className=' flex justify-between w-[95%] mx-auto pb-4'>
+
+      <h2 className='font-semibold'>Ratings Given By Client to <br /> Drivers</h2>
+
+      <DateRange/>
+
 </div>
-<div>
+<div className=' w-[95%] mx-auto'>
   <h4 className='font-semibold'>Reviews</h4>
   {data.map((item, index)=>(
 
