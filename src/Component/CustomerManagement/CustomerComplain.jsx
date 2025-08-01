@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CustomerDetailnav from "./CustomerDetailnav";
-import DateRange from './DateRange'
+import DateRange from '../DriverManagement/DateRange'
 import ComplainDetailPopup from "./ComplainDetailPopup";
 const data = [
   {

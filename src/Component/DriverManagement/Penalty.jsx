@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import DriverDetailnav from './DriverDetailnav'
 import IssueWarning from './IssueWarning'
 import TemporaryBan from './TemporaryBan'
 import PermanentBan from './PermanentBan'
+import DriverDetailnav from './DriverDetailnav'
 
 const data= [
   {

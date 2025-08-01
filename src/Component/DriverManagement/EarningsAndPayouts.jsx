@@ -1,6 +1,6 @@
 import React from 'react'
-import DriverDetailnav from './DriverDetailnav';
 import { Link } from 'react-router-dom';
+import DriverDetailnav from './DriverDetailnav';
 
 const data = [
   {

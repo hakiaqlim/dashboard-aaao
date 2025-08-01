@@ -177,11 +177,11 @@ const MarketPlaceControl = () => {
       </div>
 
 
-
+{/* sort by flagonly */}
        <div className="mt-4 px-8">
         <h3 className="text-lg font-bold mb-1">Proposal Moderation Queue:</h3>
         <span className="text-sm flex justify-end w-2/3 ">Sorted By:
-        <select name="" id="" className="bg-[#013220]">
+        <select name="" id="" className="bg-[#013220] focus:outline-none">
             <option value="">Flagged Only</option>
         </select>
         </span>

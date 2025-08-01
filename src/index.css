@@ -42,4 +42,17 @@
   padding:5px;
   color:yellow;
 }
+/* Optional - smooth thin scrollbars globally */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #facc15; /* yellow-400 */
+  border-radius: 9999px;
+}
+
 

@@ -69,6 +69,10 @@ const Sidebar = () => {
   </div>
 </Link>
 
+        <Link to='/overview' className={linkClasses('/overview')}>
+          <GiCaptainHatProfile size={20} />
+          <span>Fraud Detection</span>
+        </Link>
         <Link to='/ambassadorpanel' className={linkClasses('/ambassadorpanel')}>
           <GiCaptainHatProfile size={20} />
           <span>Ambassador Panel</span>

@@ -2,7 +2,7 @@ import React from "react";
 import { FaClock } from "react-icons/fa";
 import { TiArrowBackOutline } from "react-icons/ti";
 
-import Sidebar from './Sidebar'
+import Sidebar from './Home/Sidebar'
 import { Link } from "react-router-dom";
 const notifications = [
   {

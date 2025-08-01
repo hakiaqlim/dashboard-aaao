@@ -1,7 +1,7 @@
 import React from 'react'
 import MlmDetail from './MlmDetail'
 import MlmDdr from './MlmDdr'
-import Sidebar from './Sidebar'
+import Sidebar from "../Home/Sidebar";
 
 const Mlm = () => {
   return (
@@ -11,10 +11,11 @@ const Mlm = () => {
 <div className='flex-1'>
      
 <MlmDetail/>
-<MlmDdr/>    
+<MlmDdr/>
+   
     </div>
     </div>
   )
 }
 
-export default Mlm
+export default Mlm;

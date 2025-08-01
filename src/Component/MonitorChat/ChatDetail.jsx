@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TiArrowBackOutline } from "react-icons/ti";
 import { FaPaperPlane, FaMicrophone } from 'react-icons/fa';
-import Sidebar from './Sidebar';
+import Sidebar from '../Home/Sidebar';
 import { Link } from 'react-router-dom';
 import { LuMessageSquareText } from "react-icons/lu";
 
@@ -37,7 +37,7 @@ const [submenu, setSubmenu] = useState('allchats')
       {/* Sidebar */}
       <div>
         <Sidebar />
-      </div>
+      </div >
 
       {/* Chat Section */}
       <div className="flex-1 p-6 flex flex-col overflow-hidden">

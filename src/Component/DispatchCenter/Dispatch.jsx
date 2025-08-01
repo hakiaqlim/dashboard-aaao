@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { VscCalendar } from "react-icons/vsc";
 import DispatchTable from "./DispatchTable";
-import Sidebar from "./Sidebar";
+import Sidebar from "../Home/Sidebar";
 const data = ["All", "Assigned", "Completed", "Cancelled"];
 
 const Dispatch = () => {

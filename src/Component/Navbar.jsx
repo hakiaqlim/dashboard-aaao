@@ -2,9 +2,10 @@ import React from 'react';
 import { CiSearch, CiLogin } from "react-icons/ci";
 import { IoSettingsOutline} from "react-icons/io5";
 import { IoIosNotifications } from "react-icons/io";
+import { BiSliderAlt } from "react-icons/bi";
 
 import { LuMessageCircleMore } from "react-icons/lu";
-import { RiMenuSearchLine } from "react-icons/ri";
+
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
   const isNotificationActive = location.pathname  === '/notification';
   return (
     <div className=' flex justify-between items-center px-2  border-b border-[#3A5719] '>
-      
+       
  <div className='flex items-center gap-4 pr-[50px] py-1 border-r border-[#546816]'>
         <img
           className='rounded-full w-20 h-20 object-cover border-2 border-[#DDC104]'
@@ -36,7 +37,7 @@ const Navbar = () => {
         />
         <div  className='absolute right-[1px] p-[10px]  border-l border-t border-b  border-[#DDC104]  rounded-full cursor-pointer'>
 
-        <RiMenuSearchLine 
+        <BiSliderAlt
           size={20} />
         </div>
       </div>

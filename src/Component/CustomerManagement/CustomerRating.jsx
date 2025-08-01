@@ -1,7 +1,6 @@
 import React from 'react'
 import CustomerDetailnav from './CustomerDetailnav'
 
-import DateRange from './DateRange';
 const data = [
   {
     image:'',
@@ -39,7 +38,7 @@ const CustomerRatings = () => {
 
       <h2 className='font-semibold'>Ratings Given By Client to <br /> Drivers</h2>
 
-      <DateRange/>
+      {/* <DateRange/> */}
 
 </div>
 <div className=' w-[95%] mx-auto'>

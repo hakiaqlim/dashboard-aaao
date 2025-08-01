@@ -1,7 +1,7 @@
 import React from 'react'
-import Detail from './Component/Detail'
-import Map from './Component/Map'
-import Sidebar from './Component/Sidebar'
+import Map from './Map'
+import Detail from './Detail'
+import Sidebar from './Sidebar'
 
 const Homepage = () => {
   return (

@@ -1,18 +1,14 @@
 import React from 'react';
-import MlmTable from './MlmTable';
 import { IoFilterOutline } from "react-icons/io5";
+import CustomerMlmDdrTable from './CustomerMlmDdrTable';
 
-const MlmDdr = () => {
+const CustomerMlmDdr = () => {
   const titles = [
     'DDR',
     'CCR',
     'BBR',
     'HLR',
     'AMBESSADOR',
-    'TEAM',
-    'ROP',
-    'COMPANY EXP-',
-    'TECHNICAL',
     'Day'
   ];
 
@@ -31,9 +27,9 @@ const MlmDdr = () => {
           </React.Fragment>
         ))}
       </div>
-      <MlmTable/>
+      <CustomerMlmDdrTable/>
     </div>
   );
 };
 
-export default MlmDdr;
+export default CustomerMlmDdr;

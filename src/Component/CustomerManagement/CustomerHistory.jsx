@@ -1,8 +1,7 @@
 // Customer History
 import React from "react";
-
-import CutomerDetailnav from "./CustomerDetailnav";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import CustomerDetailnav from "./CustomerDetailnav";
 
 const data = [
   {
@@ -59,7 +58,7 @@ const CustomerHistory = () => {
 </div> 
 
 {/* customer navbar component */}
- <CutomerDetailnav/> 
+ <CustomerDetailnav/> 
 
 <div className=' pt-4'>
           <table className="w-full text-sm text-left">
