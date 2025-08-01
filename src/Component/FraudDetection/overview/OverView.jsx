@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { PiFlagPennantLight } from "react-icons/pi";
-import FraudDetectNav from "./FraudDetectNav";
-import FraudProfile from "./FraudProfile";
-import Sidebar from "../Home/Sidebar";
+import FraudDetectNav from "../FraudDetectNav";
+import Sidebar from "../../Home/Sidebar";
+
 
 const data = [
   {

@@ -3,7 +3,7 @@ import { TbEdit } from "react-icons/tb";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Sidebar from "../Home/Sidebar";
-import DriverDetailnav from "./DriverDetailnav";
+
 
 
 const data = [
@@ -40,7 +40,7 @@ const DriverManagement = () => {
         <div className="flex min-h-screen">
       <Sidebar/>
 <div className='flex-1'>
-       <DriverDetailnav/>
+      
           <table className="w-full text-sm text-left">
             <thead>
               <tr className="border-b border-yellow-200">

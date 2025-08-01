@@ -1,7 +1,8 @@
 import React from 'react';
 import { FiEdit } from "react-icons/fi";
-import FraudDetectNav from './FraudDetectNav';
-import Sidebar from '../Home/Sidebar';
+import FraudDetectNav from '../FraudDetectNav';
+import Sidebar from '../../Home/Sidebar';
+
 
 const data = [
   { rule: "Cancel in 24H", currentThreshold: 3, lastTriggered: '25 Jul, 11:30 AM' },
@@ -16,13 +17,13 @@ const data = [
 const AutoLockRulesPanel = () => {
   return (
     <div className="flex min-h-screen  ">
-      <Sidebar />
-
-      <div className="flex-1">
-        <FraudDetectNav />
+        <Sidebar />
+  
+        <div className="flex-1">
+          <FraudDetectNav />
 
       {/* Date Filter */}
-      <div className="flex justify-end pt-2 pb-6 px-4 gap-4 items-center border-b border-yellow-200 text-xs">
+      <div className=" flex justify-end pt-2 pb-6 px-4 gap-4 items-center border-b border-yellow-200 text-xs">
         <label className="flex items-center space-x-2">
           <span>Date Range:</span>
           <input type="date" className="bg-transparent border border-yellow-300 rounded px-2 py-1 text-yellow-300 focus:outline-none" />
@@ -35,7 +36,7 @@ const AutoLockRulesPanel = () => {
       </div>
 
       {/* Panel Header */}
-      <div className="w-[1070px] px-10 py-4 flex justify-between items-center">
+      <div className="w-[90%] px-10 py-4 flex justify-between items-center">
         <h2 className="text-lg font-semibold">Auto-Lock Rules Panel</h2>
         <button className="text-sm px-4 py-1 underline">Edit</button>
       </div>
@@ -81,7 +82,7 @@ const AutoLockRulesPanel = () => {
       </div>
 
       {/* Toggle Controls Header */}
-      <div className="w-[1070px] px-10 py-4 flex justify-between items-center">
+      <div className="w-[90%] px-10 py-4 flex justify-between items-center">
         <h2 className="text-lg font-semibold">
           Toggle Controls <span className="text-yellow-400 text-xs">(Automation Setting)</span>
         </h2>
@@ -100,11 +101,11 @@ const AutoLockRulesPanel = () => {
       </div>
 
       {/* Rule Monitoring & History */}
-      <div className="w-[1070px] px-10 py-4 flex justify-between items-center">
+      <div className="w-[90%] px-10 py-4 flex justify-between items-center">
         <h2 className="text-lg font-semibold">Rule Monitoring & History</h2>
         <div>
-          <label className="text-sm pr-2">Sort By</label>
-          <select className='bg-[#013220] focus:outline-none text-sm px-2 py-1 rounded'>
+          <label className="text-sm font-semibold">Sort By</label>
+          <select className='bg-[#013220] focus:outline-none text-sm py-1 rounded'>
             <option value="today">Today</option>
             <option value="weekly">Weekly</option>
             <option value="monthly">Monthly</option>

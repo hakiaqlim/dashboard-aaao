@@ -12,7 +12,7 @@ import { FaTruck } from "react-icons/fa";
 import { CiBookmarkPlus } from "react-icons/ci";
 import { FaHandHolding } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
-
+import { MdOutlineIndeterminateCheckBox } from "react-icons/md";
 
 
 const Sidebar = () => {
@@ -70,7 +70,7 @@ const Sidebar = () => {
 </Link>
 
         <Link to='/overview' className={linkClasses('/overview')}>
-          <GiCaptainHatProfile size={20} />
+          <MdOutlineIndeterminateCheckBox size={20} />
           <span>Fraud Detection</span>
         </Link>
         <Link to='/ambassadorpanel' className={linkClasses('/ambassadorpanel')}>

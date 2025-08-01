@@ -4,13 +4,27 @@ import { CiWarning } from "react-icons/ci";
 import { PiFlagPennantThin } from "react-icons/pi";
 import FinancialActivity from './FinancialActivity';
 import GeoKYCSection from './GeoKYCSection';
-import FraudDetectNav from './FraudDetectNav'
+import FraudDetectNav from '../FraudDetectNav'
+import { Link } from 'react-router-dom';
+import { TiArrowBackOutline } from 'react-icons/ti';
 const FraudProfile = () => {
   return (
     <div className='min-h-screen'>
 <FraudDetectNav/>
-   
+   <div>
+{/* Back button */}
+      <div className="flex items-center gap-2 py-4 px-6">
+          <Link to="/overview" className='flex items-center gap-2'>
+            <TiArrowBackOutline size={30} className="cursor-pointer text-lg" />
+            <span className="text-lg font-semibold">Back</span>
+          </Link>
+      </div>
+
+   </div>
     <div className=" flex flex-col md:flex-row gap-8 justify-center items-start p-6 font-sans">
+
+
+      
       {/* Left Card */}
       <div className="bg-[#006C45] rounded-xl px-6 py-10 w-full md:w-[500px] shadow-lg">
         <div className="flex justify-center -mt-1">
