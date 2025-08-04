@@ -13,6 +13,7 @@ import { CiBookmarkPlus } from "react-icons/ci";
 import { FaHandHolding } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { MdOutlineIndeterminateCheckBox } from "react-icons/md";
+import { LiaUserFriendsSolid } from "react-icons/lia";
 
 
 const Sidebar = () => {
@@ -55,7 +56,7 @@ const Sidebar = () => {
         </Link>
         
          <Link to='/customermanagement' className={linkClasses('/customermanagement')}>
-          <MdVerifiedUser size={20} />
+          <LiaUserFriendsSolid size={20} />
           <span>Customer Manag...</span>
         </Link>
 
@@ -77,7 +78,7 @@ const Sidebar = () => {
           <GiCaptainHatProfile size={20} />
           <span>Ambassador Panel</span>
         </Link>
-        <Link to='/walletpayment' className={linkClasses('/walletpayment')}>
+        <Link to='/paymentoverview' className={linkClasses('/paymentoverview')}>
           <RiWallet3Fill size={20} />
           <span>Wallet & Panel</span>
         </Link>

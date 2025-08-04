@@ -9,8 +9,6 @@ import {
   useLocation,
 } from "react-router-dom";
 
-
-import ReferralTree from "./Component/ReferralTree";
 import DriverHistory from "./Component/DriverManagement/DriverHistory";
 import Livelocation from "./Component/DispatchCenter/Livelocation";
 import ChatDetail from "./Component/MonitorChat/ChatDetail";
@@ -38,6 +36,15 @@ import Ratings from "./Component/DriverManagement/Ratings";
 import Penalty from "./Component/DriverManagement/Penalty";
 import Report from "./Component/DriverManagement/Report";
 import Analytics from "./Component/FraudDetection/analytics/Analytics";
+import ReferralTree from "./Component/DriverManagement/ReferralTree";
+import PaymentOverview from "./Component/WalletAndPayment/overview/PaymentOverview";
+import WalletAdjustment from "./Component/WalletAndPayment/WalletAdjustment/WalletAdjustment";
+import WithdrawalManagement from "./Component/WalletAndPayment/WithdrawalManagement/WithdrawalManagement";
+import WalletFreezingRule from "./Component/WalletAndPayment/WalletFreezingRule/WalletFreezingRule";
+import TransactionLog from "./Component/WalletAndPayment/Transactionlog/TransactionLog";
+import AlertAndSmartNotifi from "./Component/WalletAndPayment/Alertandsmartnotifi/AlertAndSmartNoti";
+import UnachievedPoolManage from "./Component/WalletAndPayment/UnachievedPoolManage/UnachievedPoolManage";
+
 
 // Step 1: Move Layout outside of App
 const Layout = ({ children }) => {
@@ -91,10 +98,18 @@ const AppRoutes = () => {
         {/* Fraud Detection */}
         <Route path="/overview" element={<OverView />} />
         <Route path="/fraudprofile/:id" element={<FraudProfile />} />
-
         <Route path="/autolockRulesPanel" element={<AutoLockRulesPanel />} />
         <Route path="/ruleeditorpanel" element={<RuleEditorPanel />} />
         <Route path="/analytics" element={<Analytics />} />
+        {/* Wallet and Payment */}
+        <Route path="/paymentoverview" element={<PaymentOverview />} />
+        <Route path="/walletadjustment" element={<WalletAdjustment />} />
+        <Route path="/transactions" element={<WithdrawalManagement />} />
+        <Route path="/walletfreezingrules" element={<WalletFreezingRule />} />
+        <Route path="/transactionlog" element={<TransactionLog />} />
+        <Route path="/alertnotification" element={<AlertAndSmartNotifi />} />
+        <Route path="/unachievedpool" element={<UnachievedPoolManage />} />
+
       </Routes>
     </Layout>
   );
