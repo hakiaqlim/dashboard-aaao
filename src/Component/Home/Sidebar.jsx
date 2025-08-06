@@ -86,7 +86,7 @@ const Sidebar = () => {
           <TbMessageDots size={20} />
           <p>Monitor <span className='text-sm'>(Chats & Activity)</span></p>
         </Link>
-        <Link to='/adminapprovals' className={linkClasses('/adminapprovals')}>
+        <Link to='/kycverification' className={linkClasses('/kycverification')}>
           <FiUserCheck size={20} />
           <span>Admin Approvals</span>
         </Link>
@@ -94,7 +94,7 @@ const Sidebar = () => {
           <PiUserFocus size={25} />
           <span>Reports</span>
         </Link>
-        <Link to='/ratingreviews' className={linkClasses('/ratingreviews')}>
+        <Link to='/reviewandrating' className={linkClasses('/reviewandrating')}>
           <CiBookmarkPlus size={25} />
           <span>Rating & Reviews</span>
         </Link>

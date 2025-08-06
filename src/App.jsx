@@ -44,6 +44,18 @@ import WalletFreezingRule from "./Component/WalletAndPayment/WalletFreezingRule/
 import TransactionLog from "./Component/WalletAndPayment/Transactionlog/TransactionLog";
 import AlertAndSmartNotifi from "./Component/WalletAndPayment/Alertandsmartnotifi/AlertAndSmartNoti";
 import UnachievedPoolManage from "./Component/WalletAndPayment/UnachievedPoolManage/UnachievedPoolManage";
+import KYCVerificationTable from "./Component/AdminApproval/KYCVerificationTable";
+import ServiceProvider from "./Component/AdminApproval/ServiceProvider";
+import DriverHiring from "./Component/AdminApproval/DriverHiring";
+import DriverHiringDetail from "./Component/AdminApproval/DriverHiringDetail";
+import ServiceProviderDetail from "./Component/AdminApproval/serviceProviderDetail";
+import VendorOnBordingReq from "./Component/AdminApproval/VendorOnBordingReq";
+import WithDrawalRequest from "./Component/AdminApproval/WithDrawalRequest";
+import ComplainResolution from "./Component/AdminApproval/ComplainResolution";
+import ComplaintDetails from "./Component/AdminApproval/ComplainDetails";
+import PromoCode from "./Component/AdminApproval/PromoCode";
+import ManualAccountEdits from "./Component/AdminApproval/ManualAccountEdits";
+import PromoCodeDetails from "./Component/AdminApproval/PromoCodeDetails";
 
 
 // Step 1: Move Layout outside of App
@@ -109,6 +121,20 @@ const AppRoutes = () => {
         <Route path="/transactionlog" element={<TransactionLog />} />
         <Route path="/alertnotification" element={<AlertAndSmartNotifi />} />
         <Route path="/unachievedpool" element={<UnachievedPoolManage />} />
+       {/* Admin Approval */}
+        <Route path="/kycverification" element={<KYCVerificationTable />} />
+        <Route path="/serviceProvider" element={<ServiceProvider />} />
+        <Route path="/ServiceProviderDetail/:id" element={<ServiceProviderDetail />} />
+        <Route path="/driverhiring" element={<DriverHiring />} />
+        <Route path="/driverhiringdetail/:id" element={<DriverHiringDetail />} />
+        <Route path="/vendorreq" element={<VendorOnBordingReq />} />
+        <Route path="/drawalRequest" element={<WithDrawalRequest />} />
+        <Route path="/complainresolve" element={<ComplainResolution />} />
+        <Route path="/complaindetail/:id" element={<ComplaintDetails />} />
+        <Route path="/promocode" element={<PromoCode />} />
+        <Route path="/promocodedetail/:id" element={<PromoCodeDetails />} />
+        <Route path="/accountedit" element={<ManualAccountEdits/>} />
+        {/* Rating $ Reviews */}
 
       </Routes>
     </Layout>

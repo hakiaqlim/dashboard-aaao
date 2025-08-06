@@ -4,6 +4,7 @@ import WalletPaymentNavbar from '../WalletPaymentNavbar';
 import PoollSummaryView from './PoollSummaryView';
 import TransferFundView from './TransferFundView';
 import ManualFundRecovery from './ManualFundRecovery';
+import FutureReassignmentDash from './FutureReassignmentDash';
 
 const UnachievedPoolManage = () => {
   const [activeView, setActiveView] = useState("summary");
@@ -23,7 +24,7 @@ const UnachievedPoolManage = () => {
   } else if (activeView === "recovery") {
     contentView = <ManualFundRecovery/>;
   } else if (activeView === "reassignment") {
-    contentView = <div className="text-yellow-300">Future Reassignment Dashboard Component</div>; // replace with actual
+    contentView = <FutureReassignmentDash/>; 
   }
 
   return (

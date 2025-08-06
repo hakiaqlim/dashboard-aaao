@@ -33,44 +33,47 @@ const WalletPaymentNavbar = () => {
         ref={scrollRef}
         className="mx-6 flex gap-x-4 overflow-x-auto whitespace-nowrap scrollbar-hide"
       >
-        <Link to="/paymentoverview" className={linkClass('/paymentoverview')}>
-          Overview
+        <Link to="/kycverification" className={linkClass('/kycverification')}>
+          KYC Verifications
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/walletadjustment" className={linkClass('/walletadjustment')}>
-          Wallet Adjustment
+        <Link to="/serviceProvider" className={linkClass('/serviceProvider')}>
+         Service Provider
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/transactions" className={linkClass('/transactions')}>
-          Withdrawal Management
+        <Link to="/driverhiring" className={linkClass('/driverhiring')}>
+          Driver Hiring/Career Proposals
+        </Link>
+        <div className="w-[2px] h-3 bg-yellow-400" />
+
+        <Link to="/vendorreq" className={linkClass('/vendorreq')}>
+          Vendor Onboarding Requests
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/walletfreezingrules" className={linkClass('/walletfreezingrules')}>
-          Wallet Freezing Rules
+        <Link to="/drawalRequest" className={linkClass('/drawalRequest')}>
+         Withdrawal Requests
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/transactionlog" className={linkClass('/transactionlog')}>
-          Transaction Logs
+        <Link to="/complainresolve" className={linkClass('/complainresolve')}>
+          Complain Resolutions
         </Link>
-
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/alertnotification" className={linkClass('/alertnotification')}>
-          Alert & Smart Notification
+        <Link to="/accountedit" className={linkClass('/accountedit')}>
+          Manual Account Edits
         </Link>
-
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/unachievedpool" className={linkClass('/unachievedpool')}>
-          Unachieved Pool Management
+        <Link to="/promocode" className={linkClass('/promocode')}>
+          Promo Code or Offer Aprovals
         </Link>
       </div>
 

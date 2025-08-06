@@ -20,10 +20,10 @@ const  ManualFundRecovery = () => {
   ];
 
   return (
-   <div className="overflow-x-auto max-w-6xl mx-auto mt-8 ">
+   <div className="overflow-x-auto max-w-6xl mx-auto mt-8  ">
       
       {/* Header & Filter */}
-      <div className="flex flex-wrap justify-between items-center mb-4">
+      <div className=" flex flex-wrap justify-between items-center mb-4">
         <h2 className="text-xl font-semibold text-yellow-400">Transfer View:</h2>
 
         <div className="flex items-center">
@@ -57,6 +57,14 @@ const  ManualFundRecovery = () => {
           ))}
         </tbody>
       </table>
+    </div>
+    <div className='flex flex-col gap-6 mt-5'>
+    
+    <form action="">
+      <input type="checkbox" />
+      <label htmlFor="">Auto-flag bonuses if user inactive > 90 days</label>
+    </form>
+    <button className='self-center font-semibold text-sm bg-yellow-400 px-4 py-2 rounded-full text-black'>Export CSV/PDF</button>
     </div>
      </div>
   );
