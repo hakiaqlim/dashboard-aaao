@@ -51,7 +51,7 @@ const ReportNavbar = () => {
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/walletfreezingrules" className={linkClass('/walletfreezingrules')}>
+        <Link to="/earningandcommission" className={linkClass('/earningandcommission')}>
           Earning & Commissions
         </Link>
 
@@ -63,21 +63,21 @@ const ReportNavbar = () => {
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/alertnotification" className={linkClass('/alertnotification')}>
+        <Link to="/approvedactivities" className={linkClass('/approvedactivities')}>
           Approved Activities 
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/unachievedpool" className={linkClass('/unachievedpool')}>
+        <Link to="/teamreports" className={linkClass('/teamreports')}>
         Team MLM Reports
         </Link>
                 <div className="w-[2px] h-3 bg-yellow-400" />
-        <Link to="/unachievedpool" className={linkClass('/unachievedpool')}>
+        <Link to="/withdrawaltransaction" className={linkClass('/withdrawaltransaction')}>
         Withdrawal & Transaction Logs
         </Link>
                 <div className="w-[2px] h-3 bg-yellow-400" />
-        <Link to="/unachievedpool" className={linkClass('/unachievedpool')}>
+        <Link to="/customreport" className={linkClass('/customreport')}>
         Custom Report Generator 
         </Link>
 
