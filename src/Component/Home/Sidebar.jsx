@@ -90,7 +90,7 @@ const Sidebar = () => {
           <FiUserCheck size={20} />
           <span>Admin Approvals</span>
         </Link>
-        <Link to='/reports' className={linkClasses('/reports')}>
+        <Link to='/reportanalytics' className={linkClasses('/reportanalytics')}>
           <PiUserFocus size={25} />
           <span>Reports</span>
         </Link>

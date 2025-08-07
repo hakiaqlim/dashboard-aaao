@@ -1,32 +1,30 @@
 import React from 'react';
 import PaeChart from './PaeChart';
 import Sidebar from '../../Home/Sidebar';
-import { RiWallet3Fill } from "react-icons/ri";
-import { PiHandWithdraw } from "react-icons/pi";
-import { GiFrozenOrb } from "react-icons/gi";
-import { CiMoneyBill } from "react-icons/ci";
 import WalletPaymentNavbar from '../WalletPaymentNavbar';
+import SparklinesCharts from './SparklinesCharts';
+
 
 const data = [
   {
     total: 'Total Wallets',
     percent: '1,250',
-    icon: <RiWallet3Fill size={30}/> ,
+    chartData: [12, 18, 15, 22, 28, 35]
   },
   {
     total: 'Total Balance',
     percent: 'AED 1,650,000',
-    icon: <CiMoneyBill size={30}/> ,
+    chartData: [150, 200, 170, 300, 280, 320]
   },
   {
     total: 'Pending Withdrawals',
     percent:'AED 82,500',
-    icon: <PiHandWithdraw  size={30}/> ,
+    chartData: [20, 25, 18, 30, 26, 40]
   },
   {
     total: 'Frozen Wallets',
     percent: '27 Accounts',
-    icon: <GiFrozenOrb size={30}/> ,
+    chartData: [5, 10, 8, 14, 12, 15]
   }
 ];
 
@@ -47,17 +45,17 @@ const PaymentOverview = () => {
             </select>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+          <div className='w-full max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6'>
             {data.map((item, index) => (
               <div
                 key={index}
-                className='flex flex-col gap-4 shadow-lg rounded-lg outline outline-black/20 pl-5 pt-5 bg-gradient-to-b from-[#038A59] to-[#013723] shadow-black/80'
+                className='flex flex-col gap-4 shadow-lg rounded-lg outline outline-black/20 px-5 py-5 bg-gradient-to-b from-[#038A59] to-[#013723] shadow-black/80'
               >
-                <div className='flex gap-2 items-center'>
-                  {item.icon}
-                  <p className='text-lg font-semibold tracking-wide'>{item.total}</p>
+                <div className='flex flex-col w-full'>
+                  <p className='text-lg font-semibold tracking-wide mt-2'>{item.total}</p>
                 </div>
                 <h2 className='text-3xl font-bold'>{item.percent}</h2>
+                 <SparklinesCharts data={item.chartData} />
               </div>
             ))}
           </div>

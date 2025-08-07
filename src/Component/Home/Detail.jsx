@@ -1,31 +1,32 @@
 import React from 'react';
 import { IoIosArrowDown } from "react-icons/io";
-import { FiUserCheck } from "react-icons/fi";
+import SparklineChart from './SparklineChart';
 
 
 const data = [
   {
     total: 'Total Booking',
     percent: '1000',
-    image: 'loadingtruck.png'
+    image: 'loadingtruck.png',
+    chartData: [5, 10, 8, 12, 15]
   },
   {
     total: 'Active Driver',
     percent: '24+',
     image: 'driver.png',
-    // img: 'https://user-images.githubusercontent.com/4975917/44529082-7aa59f00-a6eb-11e8-9e9e-7e845e3c6605.png'
+    chartData: [2, 6, 4, 8, 10]
   },
   {
     total: 'Total Revenue',
     percent: 10000,
     image: 'money.png',
-    // img: 'https://user-images.githubusercontent.com/4975917/44529082-7aa59f00-a6eb-11e8-9e9e-7e845e3c6605.png'
+    chartData: [20, 25, 22, 30, 28]
   },
   {
     total: 'Pending Approvals',
     percent: '24+',
     image: "user.png",
-    // img: 'https://user-images.githubusercontent.com/4975917/44529082-7aa59f00-a6eb-11e8-9e9e-7e845e3c6605.png'
+    chartData: [1, 3, 2, 4, 5]
   }
 ];
 
@@ -41,7 +42,6 @@ const Detail = () => {
         </select>
       </div>
 
-      {/* Use grid layout */}
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-12'>
         {data.map((item, index) => (
           <div
@@ -59,7 +59,11 @@ const Detail = () => {
               <p className='text-lg font-semibold m-0 tracking-wide'>{item.total}</p>
             </div>
             <h2 className='text-3xl font-bold'>{item.percent}</h2>
-            <img src={item.img} alt="line chart" className='w-[200px] h-10 object-contain' />
+            
+            {/* Chart inserted here */}
+            <div className="w-full pr-5 pb-5">
+              <SparklineChart data={item.chartData} />
+            </div>
           </div>
         ))}
       </div>

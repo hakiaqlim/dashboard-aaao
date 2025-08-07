@@ -56,6 +56,11 @@ import ComplaintDetails from "./Component/AdminApproval/ComplainDetails";
 import PromoCode from "./Component/AdminApproval/PromoCode";
 import ManualAccountEdits from "./Component/AdminApproval/ManualAccountEdits";
 import PromoCodeDetails from "./Component/AdminApproval/PromoCodeDetails";
+import ReviewAndRating from "./Component/ReviewAndRatings/ReviewAndRating";
+import ReportAnalytics from "./Component/Reports/Analytics/ReportAnalytics";
+import DriverReport from "./Component/Reports/DriverReport/DriverReport";
+import RideServiceReport from "./Component/Reports/RideServiceReport/RideServiceReport";
+import SupportReport from "./Component/Reports/SupportReport/SupportReport";
 
 
 // Step 1: Move Layout outside of App
@@ -135,6 +140,12 @@ const AppRoutes = () => {
         <Route path="/promocodedetail/:id" element={<PromoCodeDetails />} />
         <Route path="/accountedit" element={<ManualAccountEdits/>} />
         {/* Rating $ Reviews */}
+        <Route path="/reviewandrating" element={<ReviewAndRating/>} />
+        {/* Repots */}
+        <Route path="/reportanalytics" element={<ReportAnalytics/>} />
+        <Route path="/driverreport" element={<DriverReport/>} />
+        <Route path="/rideservicereport" element={<RideServiceReport/>} />
+        <Route path="/supportreport" element={<SupportReport/>} />
 
       </Routes>
     </Layout>

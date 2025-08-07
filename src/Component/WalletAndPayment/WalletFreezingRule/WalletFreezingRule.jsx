@@ -86,7 +86,7 @@ const WalletFreezingRule = () => {
                     className="accent-yellow-400"
                     name="cancelAbuse"
                   />
-                  Freeze if cancels > 3 in 24 hrs
+                  Freeze if cancels  &gt;3 in 24 hrs
                 </label>
 
                 {/* Figma-style Switch */}
