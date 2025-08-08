@@ -46,9 +46,9 @@ import AlertAndSmartNotifi from "./Component/WalletAndPayment/Alertandsmartnotif
 import UnachievedPoolManage from "./Component/WalletAndPayment/UnachievedPoolManage/UnachievedPoolManage";
 import KYCVerificationTable from "./Component/AdminApproval/KYCVerificationTable";
 import ServiceProvider from "./Component/AdminApproval/ServiceProvider";
+import ServiceProviderDetail from "./Component/AdminApproval/ServiceProviderDetail";
 import DriverHiring from "./Component/AdminApproval/DriverHiring";
 import DriverHiringDetail from "./Component/AdminApproval/DriverHiringDetail";
-import ServiceProviderDetail from "./Component/AdminApproval/serviceProviderDetail";
 import VendorOnBordingReq from "./Component/AdminApproval/VendorOnBordingReq";
 import WithDrawalRequest from "./Component/AdminApproval/WithDrawalRequest";
 import ComplainResolution from "./Component/AdminApproval/ComplainResolution";
@@ -129,7 +129,7 @@ const AppRoutes = () => {
        {/* Admin Approval */}
         <Route path="/kycverification" element={<KYCVerificationTable />} />
         <Route path="/serviceProvider" element={<ServiceProvider />} />
-        <Route path="/ServiceProviderDetail/:id" element={<ServiceProviderDetail />} />
+        <Route path="/serviceProviderDetail/:id" element={<ServiceProviderDetail/>} />
         <Route path="/driverhiring" element={<DriverHiring />} />
         <Route path="/driverhiringdetail/:id" element={<DriverHiringDetail />} />
         <Route path="/vendorreq" element={<VendorOnBordingReq />} />
