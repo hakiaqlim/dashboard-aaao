@@ -60,10 +60,10 @@ const  ManualFundRecovery = () => {
     </div>
     <div className='flex flex-col gap-6 mt-5'>
     
-    <form action="">
-      <input type="checkbox" />
-      <label htmlFor="">Auto-flag bonuses if user inactive > 90 days</label>
-    </form>
+   <form action="">
+  <input type="checkbox" />
+  <label htmlFor="">Auto-flag bonuses if user inactive &gt; 90 days</label>
+</form>
     <button className='self-center font-semibold text-sm bg-yellow-400 px-4 py-2 rounded-full text-black'>Export CSV/PDF</button>
     </div>
      </div>

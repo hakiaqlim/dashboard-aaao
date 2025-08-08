@@ -79,15 +79,15 @@ const WalletFreezingRule = () => {
                 <strong>Cancellation Abuse :</strong>
               </span>
               <div className="flex justify-between ">
-                <label className="flex items-center gap-4 py-6">
-                  <input
-                    type="checkbox"
-                    defaultChecked
-                    className="accent-yellow-400"
-                    name="cancelAbuse"
-                  />
-                  Freeze if cancels  &gt;3 in 24 hrs
-                </label>
+               <label className="flex items-center gap-4 py-6">
+  <input
+    type="checkbox"
+    defaultChecked
+    className="accent-yellow-400"
+    name="cancelAbuse"
+  />
+  Freeze if cancels &gt;3 in 24 hrs
+</label>
 
                 {/* Figma-style Switch */}
                 <FormControlLabel
