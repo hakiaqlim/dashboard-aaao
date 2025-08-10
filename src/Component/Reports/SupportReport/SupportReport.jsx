@@ -1,7 +1,9 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import IssueBarChart from './IssueBarChart';
+import IssueTableChart from './IssueTableChart';
+import Sidebar from '../../Home/Sidebar';
+import ReportNavbar from '../ReportNavbar';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -34,9 +36,11 @@ const SupportReport = () => {
   };
 
   return (
-    <div>
-
-    <div style={{ backgroundColor: '#002d18', color: 'yellow', padding: '40px', textAlign: 'center' }}>
+   <div className="flex min-h-screen">
+      <Sidebar />
+      <div className='flex-1 overflow-hidden'>
+        <ReportNavbar />
+    <div style={{  color: 'yellow', padding: '40px', textAlign: 'center' }}>
       <h3 style={{ marginBottom: '20px' }}>Complaint Tickets</h3>
 
       {/* Horizontal Layout */}
@@ -73,8 +77,10 @@ const SupportReport = () => {
         </div>
       </div>
     </div>
-    <IssueBarChart/>
+    <IssueTableChart/>
     </div>
+    </div>
+   
   );
 };
 

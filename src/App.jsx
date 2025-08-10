@@ -61,6 +61,12 @@ import ReportAnalytics from "./Component/Reports/Analytics/ReportAnalytics";
 import DriverReport from "./Component/Reports/DriverReport/DriverReport";
 import RideServiceReport from "./Component/Reports/RideServiceReport/RideServiceReport";
 import SupportReport from "./Component/Reports/SupportReport/SupportReport";
+import EarningAndCommission from "./Component/Reports/EarningAndCommission/EarningAndCommission";
+import ApprovalActivities from "./Component/Reports/ApprovalActivities/ApprovalActivities";
+import TeamMLMReport from "./Component/Reports/TeamMLMReport/TeamMLMReport";
+import WithdrawalTransactionLog from "./Component/Reports/WithdrawalAndTransactionLog/WithdrawalTransactionLog";
+import CustomReportGenerator from "./Component/Reports/CustomReportGenerator/CustomReportGenerator";
+import CustomReportTable from "./Component/Reports/CustomReportGenerator/CustomReportTable";
 
 
 // Step 1: Move Layout outside of App
@@ -146,6 +152,12 @@ const AppRoutes = () => {
         <Route path="/driverreport" element={<DriverReport/>} />
         <Route path="/rideservicereport" element={<RideServiceReport/>} />
         <Route path="/supportreport" element={<SupportReport/>} />
+        <Route path="/earningandcommission" element={<EarningAndCommission/>} />
+        <Route path="/approvalactivities" element={<ApprovalActivities/>} />
+        <Route path="/teammlmreport" element={<TeamMLMReport/>} />
+        <Route path="/withdrawalandtransaction" element={<WithdrawalTransactionLog/>} />
+        <Route path="/customreportgenerator" element={<CustomReportGenerator/>} />
+        <Route path="/customreporttable" element={<CustomReportTable/>} />
 
       </Routes>
     </Layout>

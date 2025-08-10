@@ -63,21 +63,21 @@ const ReportNavbar = () => {
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/approvedactivities" className={linkClass('/approvedactivities')}>
+        <Link to="/approvalactivities" className={linkClass('/approvalactivities')}>
           Approved Activities 
         </Link>
 
         <div className="w-[2px] h-3 bg-yellow-400" />
 
-        <Link to="/teamreports" className={linkClass('/teamreports')}>
+        <Link to="/teammlmreport" className={linkClass('/teammlmreport')}>
         Team MLM Reports
         </Link>
                 <div className="w-[2px] h-3 bg-yellow-400" />
-        <Link to="/withdrawaltransaction" className={linkClass('/withdrawaltransaction')}>
+        <Link to="/withdrawalandtransaction" className={linkClass('/withdrawalandtransaction')}>
         Withdrawal & Transaction Logs
         </Link>
                 <div className="w-[2px] h-3 bg-yellow-400" />
-        <Link to="/customreport" className={linkClass('/customreport')}>
+        <Link to="/customreportgenerator" className={linkClass('/customreportgenerator')}>
         Custom Report Generator 
         </Link>
 
