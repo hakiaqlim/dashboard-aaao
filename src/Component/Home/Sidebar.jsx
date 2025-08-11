@@ -14,6 +14,7 @@ import { FaHandHolding } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { MdOutlineIndeterminateCheckBox } from "react-icons/md";
 import { LiaUserFriendsSolid } from "react-icons/lia";
+import { FaUserTie } from "react-icons/fa6";
 
 
 const Sidebar = () => {
@@ -51,7 +52,7 @@ const Sidebar = () => {
        
 
         <Link to='/drivermanagement' className={linkClasses('/drivermanagement')}>
-          <MdRequestPage size={20} />
+          <FaUserTie size={20} />
           <span>Driver Management</span>
         </Link>
         
