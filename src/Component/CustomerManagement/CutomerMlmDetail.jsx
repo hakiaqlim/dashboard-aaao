@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CustomerMlmChart from './CustomerMlmChart';
 
 
 
@@ -6,12 +7,12 @@ const data = [
   {
     total: 'Total Earning',
     percent: '$100000',
-    // img: 'https://quickchart.io/chart?c={type:%27line%27,data:{labels:[%27Jan%27,%27Feb%27,%27Mar%27],datasets:[{label:%27Clients%27,data:[20,40,86]}]}}'
-  },
+chartData: [20, 40, 86, 60, 90] 
+ },
   {
     total: 'Team Members',
     percent: '$10000',
-    // img: 'https://quickchart.io/chart?c={type:%27line%27,data:{labels:[%27Jan%27,%27Feb%27,%27Mar%27],datasets:[{label:%27Drivers%27,data:[10,22,34]}]}}'
+chartData: [20, 40, 86, 60, 90]
   }
 ];
 
@@ -31,7 +32,8 @@ const CutomerMlmDetail = () => {
         >
           <p className='text-lg font-semibold tracking-wide'>{item.total}</p>
           <h2 className='text-3xl font-bold'>{item.percent}</h2>
-          <img src={item.img} alt="line chart" className='w-32 h-16 object-contain' />
+         <CustomerMlmChart data={item.chartData} /> {/* ✅ Chart added */}
+
         </div>
       ))}
     </div>

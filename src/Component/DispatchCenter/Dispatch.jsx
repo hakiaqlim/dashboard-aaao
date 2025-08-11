@@ -1,47 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { VscCalendar } from "react-icons/vsc";
 import DispatchTable from "./DispatchTable";
 import Sidebar from "../Home/Sidebar";
-const data = ["All", "Assigned", "Completed", "Cancelled"];
+
+const dataTabs = ["All", "Assigned", "Completed", "Cancelled"];
 
 const Dispatch = () => {
+  // Filter states
+  const [serviceType, setServiceType] = useState("");
+  const [region, setRegion] = useState("");
+  const [sortBy, setSortBy] = useState("");
+  const [date, setDate] = useState("");
+
+  // Active tab state
+  const [activeTab, setActiveTab] = useState("All");
+
   return (
-      <div className="flex min-h-screen">
-      <Sidebar/>
-{/* <Navbar/> */}
-<div className='flex-1'>
-      <div className="flex gap-20 p-6">
-        <button className="border border-yellow-400 rounded-full px-4 flex items-center gap-1 py-2">
-          Services type <IoIosArrowDown size={15} />
-        </button>
-        <button className="border border-yellow-400 rounded-full px-4 flex items-center gap-1 py-2">
-          Region <IoIosArrowDown size={15} />
-        </button>
-        <button className="border border-yellow-400 rounded-full px-4 flex items-center gap-1 py-2">
-          Sort By <IoIosArrowDown size={15} />
-        </button>
-        <button className="border border-yellow-400 rounded-full px-4 flex items-center gap-1 py-2">
-          Date <VscCalendar size={20} />
-        </button>
-      </div>
-      <div className="flex gap-20 p-6 items-center font-bold">
-        {data.map((item, index) => (
-          <React.Fragment key={index}>
-            <p className="relative">{item} {item == 'All' &&(
+    <div className="flex min-h-screen">
+      <Sidebar />
+      <div className="flex-1">
+        
+        {/* Filters */}
+        <div className="flex gap-6 p-6 flex-wrap">
+          <select
+            value={serviceType}
+            onChange={(e) => setServiceType(e.target.value)}
+            className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
+          >
+            <option value="">Services type</option>
+            <option value="Tow">Tow</option>
+            <option value="Repair">Repair</option>
+            <option value="Delivery">Delivery</option>
+          </select>
 
-                            <span className="absolute left-0 w-full h-[1px] pb-[-2px] bottom-0 bg-yellow-400 rounded-full"></span>
-            )}
+          <select
+            value={region}
+            onChange={(e) => setRegion(e.target.value)}
+            className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
+          >
+            <option value="">Region</option>
+            <option value="North">North</option>
+            <option value="South">South</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+          </select>
 
-            </p>
-            {index !== data.length - 1 && (
-              <div className="w-[2px] h-3 bg-yellow-400"></div>
-            )}
-          </React.Fragment>
-        ))}
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+            className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
+          >
+            <option value="">Sort By</option>
+            <option value="date">Date</option>
+            <option value="status">Status</option>
+            <option value="priority">Priority</option>
+          </select>
+
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
+          />
+        </div>
+
+        {/* Status Tabs */}
+        <div className="flex gap-6 p-6 items-center font-bold">
+          {dataTabs.map((item, index) => (
+            <React.Fragment key={index}>
+              <p
+                onClick={() => setActiveTab(item)}
+                className={`cursor-pointer pb-1 transition-colors duration-200 ${
+                  activeTab === item
+                    ? "text-yellow-400 border-b-2 border-yellow-400"
+                    : "hover:text-yellow-300"
+                }`}
+              >
+                {item}
+              </p>
+              {index !== dataTabs.length - 1 && (
+                <div className="w-[2px] h-3 bg-yellow-400"></div>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+
+        {/* Table */}
+        <DispatchTable
+          filters={{ serviceType, region, sortBy, date }}
+          status={activeTab}
+        />
       </div>
-      <DispatchTable />
-    </div>
     </div>
   );
 };

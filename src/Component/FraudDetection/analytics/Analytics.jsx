@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../../Home/Sidebar";
 import FraudPieChart from "./FraudPieChart";
 import FraudDetectNav from "../FraudDetectNav";
+import AnalyticsChart from "./AnalyticsChart";
 
 const userData =[
     {
@@ -12,6 +13,12 @@ const userData =[
         lastAction:'Wallet Frozen',
     }
 ]
+
+const detaildata= [
+          { title: "Total Flags", value: "100+",chartData: [20, 40, 86, 60, 90]   },
+          { title: "Suspensions", value: "200+", chartData: [20, 40, 86, 60, 90]  },
+          { title: "Financial Abuse Cases", value: "50+", chartData: [20, 40, 86, 60, 90] },
+        ]
 const Analytics = () => {
   return (
     <div className="flex min-h-screen">
@@ -29,11 +36,7 @@ const Analytics = () => {
         </div>
       {/* Top Stats Section */}
       <div className="flex justify-around mb-10">
-        {[
-          { title: "Total Flags", value: "100+" },
-          { title: "Suspensions", value: "200+" },
-          { title: "Financial Abuse Cases", value: "50+" },
-        ].map((item, i) => (
+        {detaildata.map((item, i) => (
           <div
             key={i}
             className=" shadow-md w-1/4 p-4 shadow-black/70 rounded-xl"
@@ -44,7 +47,8 @@ const Analytics = () => {
               {item.value}
             </div>
             {/* You can insert a line chart here */}
-            <div className="h-12 w-full bg-gradient-to-r from-yellow-300 to-transparent rounded" />
+            <div  />
+            <AnalyticsChart data={item.chartData}/>
           </div>
         ))}
       </div>

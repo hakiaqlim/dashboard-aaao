@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import SparklineChart from './SparklineChart';
+import { GiTowTruck } from "react-icons/gi";
 
 
 const data = [

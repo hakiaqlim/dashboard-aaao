@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomerDetailnav from './CustomerDetailnav';
 import { FaChevronDown } from 'react-icons/fa';
 import { SlCalender } from "react-icons/sl";
+import SparklineChart from './SparklineChart'; // ✅ Import your sparkline chart
 
 const data = [
   {
@@ -9,34 +10,31 @@ const data = [
     time: '11:00 Pm',
     amount: 100,
     payment: 'Bank: ABM Bank Abu Dhabi',
-    action: "View",
   },
   {
     date: '21/July/2025',
     time: '11:00 Pm',
     amount: 100,
     payment: 'Bank: ABM Bank Abu Dhabi',
-    action: "View",
   },
   {
     date: '21/July/2025',
     time: '11:00 Pm',
     amount: 100,
     payment: 'Bank: ABM Bank Abu Dhabi',
-    action: "View",
   },
 ];
 
 const totalpayment = [
   {
-    title: 'Total Deposite',
+    title: 'Total Deposit',
     money: 1000,
-    image: '',
+    chartData: [20, 40, 86, 60, 90], // ✅ Chart data
   },
   {
     title: 'Total Withdraw',
     money: 1000,
-    image: '',
+    chartData: [10, 22, 34, 25, 15], // ✅ Chart data
   },
 ];
 
@@ -117,7 +115,7 @@ const CustomerEarningPayout = () => {
             >
               <p className="font-semibold text-xl">{item.title}</p>
               <h3 className="font-bold text-2xl">${item.money}</h3>
-              {item.image && <img src={item.image} alt="icon" />}
+              <SparklineChart data={item.chartData} /> {/* ✅ Chart added */}
             </div>
           ))}
         </div>
@@ -143,7 +141,7 @@ const CustomerEarningPayout = () => {
                 <td className="w-[20%] px-4 py-3">
                   <div className="flex items-center gap-3 justify-center">
                     <button className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                      {item.action}
+                     View
                     </button>
                   </div>
                 </td>

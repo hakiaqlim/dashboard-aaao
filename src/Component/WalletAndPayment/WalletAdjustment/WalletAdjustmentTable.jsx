@@ -132,8 +132,10 @@ const WalletAdjustmentTable = () => {
       <div className="max-w-5xl mx-auto space-y-6">
         {/* Select Box */}
         <div className="flex items-center border border-yellow-400 rounded-full px-4 py-2">
-          <select className="bg-transparent w-full focus:outline-none">
+          <select className="bg-transparent w-full focus:outline-none bg-[#013220]">
             <option>Select User/Driver</option>
+            <option>User</option>
+            <option>Driver</option>
           </select>
           <FiSearch className="text-yellow-300" />
         </div>
