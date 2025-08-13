@@ -11,7 +11,7 @@ chartData: [20, 40, 86, 60, 90]
  },
   {
     total: 'Team Members',
-    percent: '$10000',
+    percent: '10000',
 chartData: [20, 40, 86, 60, 90]
   }
 ];

@@ -7,12 +7,12 @@ import SparklineChart from './SparklineChart'
 const data = [
   {
     title: 'Total Deposit',
-    money: 1000,
+    money: '$1000',
     chartData: [20, 40, 86, 60, 90]
   },
   {
     title: 'Total Withdrawal',
-    money: 1000,
+    money: '$1000',
     chartData: [10, 22, 34, 25, 15]
   },
   {
@@ -54,7 +54,7 @@ const DriverProfile = () => {
       {/* Sort by month */}
       <div className='flex justify-end w-2/3 pt-8'>
         <label>Sort By:</label>
-        <select className='bg-[#013220]'>
+        <select className='bg-[#013220] focus:outline-none'>
           <option value="Month">Month</option>
           <option value="year">Year</option>
         </select>

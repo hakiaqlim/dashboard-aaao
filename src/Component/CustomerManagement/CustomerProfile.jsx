@@ -1,18 +1,16 @@
 import React from 'react'
-import { TiArrowBackOutline } from 'react-icons/ti'
-import { Link } from 'react-router-dom'
 import CustomerDetailnav from './CustomerDetailnav';
 import SparklineChart from './SparklineChart'; // ✅ Import the chart
 
 const data = [
   {
     title: 'Total Deposit',
-    money: 1000,
+    money: '$1000',
     chartData: [20, 40, 86, 60, 90] // ✅ Chart data
   },
   {
     title: 'Total Withdrawal',
-    money: 1000,
+    money: "$1000",
     chartData: [10, 22, 34, 25, 15]
   },
   {
