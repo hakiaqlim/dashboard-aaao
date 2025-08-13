@@ -4,21 +4,16 @@ import Level1Table from './Level1Table';
 import Level2Table from './Level2Table';
 import Level3Table from './Level3Table';
 import Level4Table from './Level4Table';
-import CustomerMlmTablePopup from './CustomerMlmTablePopup';
 
 const CustomerMlmDdrTable = () => {
   const [selectedLevel, setSelectedLevel] = useState(1);
-  const [showPopup, setShowPopup] = useState(false);
 
-  // Pass the popup handler to each table
   const renderLevelComponent = () => {
-    const props = { onViewDetail: () => setShowPopup(true) };
-
     switch (selectedLevel) {
-      case 1: return <Level1Table {...props} />;
-      case 2: return <Level2Table {...props} />;
-      case 3: return <Level3Table {...props} />;
-      case 4: return <Level4Table {...props} />;
+      case 1: return <Level1Table />;
+      case 2: return <Level2Table />;
+      case 3: return <Level3Table />;
+      case 4: return <Level4Table />;
       default: return null;
     }
   };
@@ -42,12 +37,9 @@ const CustomerMlmDdrTable = () => {
       </div>
 
       {/* Render selected level */}
-      <div className="border border-yellow-400 w-[95%] mx-auto px-8 py-2 rounded">
+      <div className=" w-[95%] mx-auto px-8 py-2 ">
         {renderLevelComponent()}
       </div>
-
-      {/* Popup */}
-      {showPopup && <CustomerMlmTablePopup onClose={() => setShowPopup(false)} />}
     </div>
   );
 };

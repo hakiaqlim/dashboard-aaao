@@ -1,6 +1,5 @@
 // Level1Table.jsx
 import React, { useState } from 'react';
-import MlmPopupCard from './MlmPopupCard';
 
 const level1Data = [
   { id: 1, name: 'Smith Joy', amount: 1000, date: '4/July/25', source: 'Driver', action: 'View Detail' },
@@ -8,7 +7,6 @@ const level1Data = [
 ];
 
 const Level1Table = () => {
-  const [showPopup, setShowPopup] = useState(false);
 
   return (
     <>
@@ -46,7 +44,6 @@ const Level1Table = () => {
         </table>
       </div>
 
-      {showPopup && <MlmPopupCard onClose={() => setShowPopup(false)} />}
     </>
   );
 };
