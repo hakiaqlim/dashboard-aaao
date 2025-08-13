@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { IoFilterOutline } from "react-icons/io5";
 import MlmTable from './MlmTable';
-import MlmCcr from './MlmCcr';
 import MlmBbr from './MlmBbr';
 import MlmHlr from './MlmHlr';
+import MlmCrr from './MlmCrr';
 
 const MlmDdr = () => {
   const titles = [
@@ -11,6 +11,7 @@ const MlmDdr = () => {
     'CCR',
     'BBR',
     'HLR',
+    'AMBESSDOR',
     'Day'
   ];
 
@@ -19,11 +20,13 @@ const MlmDdr = () => {
   const renderContent = () => {
     switch (activeTab) {
       case 'CCR':
-        return <MlmCcr />;
+        return <MlmCrr />;
       case 'BBR':
         return <MlmBbr />;
         case 'HLR':
         return <MlmHlr />;
+        case 'Ambessdor':
+          return <Ambessdor/>
       default:
         return <MlmTable activeTab={activeTab} />;
     }
@@ -35,7 +38,7 @@ const MlmDdr = () => {
       <div className="flex items-center border-b border-yellow-400 justify-between font-semibold text-yellow-400 flex-nowrap overflow-x-auto">
         {titles.map((title, index) => (
           <React.Fragment key={index}>
-            <div
+            <p
               onClick={() => setActiveTab(title)}
               className={`pr-2 cursor-pointer text-sm flex items-center gap-2 px-4 py-2
                 ${activeTab === title
@@ -50,7 +53,7 @@ const MlmDdr = () => {
             >
               {title}
               {title === 'Day' && <IoFilterOutline className="text-lg" />}
-            </div>
+            </p>
 
             {/* Vertical separator */}
             {index !== titles.length - 2 && index !== titles.length - 1 && (

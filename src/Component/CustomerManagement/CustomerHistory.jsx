@@ -12,7 +12,6 @@ const data = [
     drivername: "Allice Smith",
     status:'Completed',
     fare:100,
-    action: "View",
   },
   {
     id: 1,
@@ -22,7 +21,6 @@ const data = [
     drivername: "Allice Smith",
     status:'Completed',
     fare:100,
-    action: "View",
   },
   {
     id: 1,
@@ -32,7 +30,6 @@ const data = [
     drivername: "Allice Smith",
     status:'Completed',
     fare:100,
-    action: "View",
   },
  
 ];
@@ -90,8 +87,8 @@ const CustomerHistory = () => {
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3 justify-center">
                   
-                      <button className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                        {item.action}
+                      <button className="bg-yellow-400 text-[#013220] px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                       View
                       </button>
                     
                     </div>

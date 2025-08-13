@@ -129,10 +129,10 @@ const DriverHiringDetail = () => {
         </div>
 
          <div className='flex justify-center items-center pt-10 gap-6'>
-        <button className='bg-yellow-400 px-8 py-2 rounded-full text-black text-sm font-semibold'>Approve</button>
-        <button className='bg-yellow-400 px-12 py-2 rounded-full text-black text-sm font-semibold'>Reject</button>
-        <button className='bg-yellow-400 px-6 py-2 rounded-full text-black text-sm font-semibold'>Modify Terms</button>
-        <button className='bg-yellow-400 px-4 py-2 rounded-full text-black text-sm font-semibold'>Add Internal Note</button>
+        <button className='bg-yellow-400 px-8 py-2 rounded-full text-[#013220] text-sm font-semibold'>Approve</button>
+        <button className='bg-yellow-400 px-12 py-2 rounded-full text-[#013220] text-sm font-semibold'>Reject</button>
+        <button className='bg-yellow-400 px-6 py-2 rounded-full text-[#013220] text-sm font-semibold'>Modify Terms</button>
+        <button className='bg-yellow-400 px-4 py-2 rounded-full text-[#013220] text-sm font-semibold'>Add Internal Note</button>
       </div>
       </div>
     </div>

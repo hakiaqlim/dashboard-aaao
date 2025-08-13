@@ -3,6 +3,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import { VscCalendar } from "react-icons/vsc";
 import DispatchTable from "./DispatchTable";
 import Sidebar from "../Home/Sidebar";
+import Assigned from "./Assigned";
+import Completed from "./Completed";
+import Cancelled from "./Cancelled";
 
 const dataTabs = ["All", "Assigned", "Completed", "Cancelled"];
 
@@ -15,6 +18,18 @@ const Dispatch = () => {
 
   // Active tab state
   const [activeTab, setActiveTab] = useState("All");
+  const renderContent = ()=>{
+    switch(activeTab){
+      case 'Assigned':
+      return <Assigned/>
+      case 'Completed':
+        return <Completed/>
+        case 'Cancelled':
+          return <Cancelled/>
+          default: 
+          return <DispatchTable activeTab={activeTab}/>
+    }
+  }
 
   return (
     <div className="flex min-h-screen">
@@ -39,11 +54,9 @@ const Dispatch = () => {
             onChange={(e) => setRegion(e.target.value)}
             className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
           >
-            <option value="">Region</option>
-            <option value="North">North</option>
-            <option value="South">South</option>
-            <option value="East">East</option>
-            <option value="West">West</option>
+            <option value="">City</option>
+            <option value="North">Dubai</option>
+            <option value="South">Abu Dhabi</option>
           </select>
 
           <select
@@ -86,11 +99,8 @@ const Dispatch = () => {
           ))}
         </div>
 
-        {/* Table */}
-        <DispatchTable
-          filters={{ serviceType, region, sortBy, date }}
-          status={activeTab}
-        />
+        {/* content */}
+        {renderContent()}
       </div>
     </div>
   );

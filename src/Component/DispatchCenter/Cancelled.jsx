@@ -3,14 +3,14 @@ import { FaRegEye } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
-const DispatchTable = () => {
+const Cancelled = () => {
     const tabledata = [
         {
             id:1,
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Cancelled',
            
         },
         {
@@ -18,7 +18,7 @@ const DispatchTable = () => {
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Cancelled',
            
         },
         {
@@ -26,7 +26,7 @@ const DispatchTable = () => {
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Cancelled',
             
         },
     ]
@@ -39,7 +39,6 @@ const DispatchTable = () => {
                 <th className='text-sm px-4 py-2'>Client Name</th>
                 <th className='text-sm px-4 py-2'>Pickup & Drop-off</th>
                 <th className='text-sm px-4 py-2'>Status</th>
-                <th className='text-sm px-4 py-2 text-center'>Action</th>
                  </tr>
             </thead>
 <tbody>
@@ -54,12 +53,7 @@ const DispatchTable = () => {
   </div>
 </td>
         <td className='text-sm px-4 py-2'>{item.status}</td>
-        <td className='px-4 py-2 flex justify-center'>
-  <Link to={'/livelocation'} className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-[#013220] hover:bg-yellow-300 transition-all whitespace-nowrap'>
-    <FaRegEye className='text-sm' />
-    Live Location
-  </Link>
-</td>
+       
     </tr>
     ))}
    
@@ -69,4 +63,4 @@ const DispatchTable = () => {
   )
 }
 
-export default DispatchTable
+export default Cancelled

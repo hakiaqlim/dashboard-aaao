@@ -1,7 +1,8 @@
 import React from "react";
 import { IoEyeOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
-
+import Sidebar from '../Home/Sidebar'
+import CareerNavbar from "./CareerNavbar";
 const data = [
   {
     id: 1,
@@ -24,26 +25,15 @@ const data = [
 ];
 
 const ProposalManagement = () => {
-  const location = useLocation()
-  const linkClass = (path) => {
-  return `menu-tab font-semibol ${location.pathname === path ? 'active' : ''}`;
-};
+ 
 
   return (
-    <div className="">
+    <div className="flex">
+      <Sidebar/>
+      <div className="flex-1 flex flex-col">
       <div className=" border-b border-yellow-300">
 
-         <div className="flex justify-between w-1/2 p-2 ">
-        <Link to="/proposalmanagement" className={linkClass('/proposalmanagement')}>
-          Proposal Management
-        </Link>
-        <Link to="/agreementrecord" className={linkClass('/agreementrecord')}>
-          Agreement Generation & Record
-        </Link>
-        <Link to="/marketplacecontrol" className={linkClass('/marketplacecontrol')}>
-          Marketplace Control
-        </Link>
-      </div>
+         <CareerNavbar/>
       </div>
       {/* date range and sort */}
    <div className="flex items-center justify-end gap-2 flex-wrap py-2">
@@ -126,6 +116,7 @@ const ProposalManagement = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

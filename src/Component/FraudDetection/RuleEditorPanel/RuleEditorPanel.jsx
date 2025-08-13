@@ -39,7 +39,7 @@ const RuleEditorPanel = () => {
                     className="bg-transparent focus:outline-none rounded-full border border-yellow-400 px-2 py-1 w-1/2"
                   />
                   <div className="flex gap-2">
-                    <button className="bg-yellow-400 text-black px-4 py-1 rounded-full">Save</button>
+                    <button className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full">Save</button>
                     <FaEdit size={25} className="px-1 py-1 rounded-full bg-yellow-300 text-[#013220] cursor-pointer" />
                   </div>
                 </div>
@@ -66,8 +66,8 @@ const RuleEditorPanel = () => {
                     </td>
                     <td className="border border-yellow-500 px-4 py-4">
                       <div className="flex gap-2 items-center">
-                        <button className="bg-yellow-400 text-black px-4 py-1 rounded-full">Save</button>
-                        <FaEdit size={25} className="p-1 rounded-full text-black bg-yellow-400 cursor-pointer" />
+                        <button className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full">Save</button>
+                        <FaEdit size={25} className="p-1 rounded-full text-[#013220] bg-yellow-400 cursor-pointer" />
                       </div>
                     </td>
                   </tr>
@@ -84,8 +84,8 @@ const RuleEditorPanel = () => {
                     </td>
                     <td className="border border-yellow-500 px-4 py-4">
                       <div className="flex gap-2 items-center">
-                        <button className="bg-yellow-400 text-black px-4 py-1 rounded-full">Save</button>
-                        <FaEdit size={25} className="p-1 rounded-full text-black bg-yellow-400 cursor-pointer" />
+                        <button className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full">Save</button>
+                        <FaEdit size={25} className="p-1 rounded-full text-[#013220] bg-yellow-400 cursor-pointer" />
                       </div>
                     </td>
                   </tr>
@@ -102,8 +102,8 @@ const RuleEditorPanel = () => {
                     </td>
                     <td className="border border-yellow-500 px-4 py-4">
                       <div className="flex gap-2 items-center">
-                        <button className="bg-yellow-400 text-black px-4 py-1 rounded-full">Save</button>
-                        <FaEdit size={25} className="p-1 rounded-full text-black bg-yellow-400 cursor-pointer" />
+                        <button className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full">Save</button>
+                        <FaEdit size={25} className="p-1 rounded-full text-[#013220] bg-yellow-400 cursor-pointer" />
                       </div>
                     </td>
                   </tr>
@@ -114,8 +114,8 @@ const RuleEditorPanel = () => {
 
           {/* Bottom Buttons */}
           <div className="flex justify-center gap-6 mt-10">
-            <button className="bg-yellow-400 text-black font-bold px-8 py-2 rounded-full shadow-md">Save Rules</button>
-            <button className="bg-yellow-400 text-black font-bold px-8 py-2 rounded-full shadow-md">Cancel</button>
+            <button className="bg-yellow-400 text-[#013220] font-bold px-8 py-2 rounded-full shadow-md">Save Rules</button>
+            <button className="bg-yellow-400 text-[#013220] font-bold px-8 py-2 rounded-full shadow-md">Cancel</button>
           </div>
         </div>
       </div>

@@ -5,7 +5,6 @@ import Sidebar from '../Home/Sidebar';
 import { Link } from 'react-router-dom';
 import { LuMessageSquareText } from "react-icons/lu";
 
-
 const ChatDetail = () => {
   const [menu, setMenue] = useState('chat');
   const [inputText, setInputText] = useState('');
@@ -121,7 +120,7 @@ const [submenu, setSubmenu] = useState('allchats')
                 placeholder="Type here..."
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
-                className="flex-1 bg-transparent focus:outline-none placeholder-yellow-400 text-black"
+                className="flex-1 bg-transparent focus:outline-none placeholder-yellow-400 text-yellow-400"
               />
               </div>
 

@@ -3,6 +3,8 @@ import IssueWarning from './IssueWarning'
 import TemporaryBan from './TemporaryBan'
 import PermanentBan from './PermanentBan'
 import DriverDetailnav from './DriverDetailnav'
+import { TiArrowBackOutline } from 'react-icons/ti'
+import { Link } from 'react-router-dom'
 
 const data= [
   {
@@ -33,7 +35,6 @@ const Penalty = () => {
   <option value="low">Low</option>
 </select>
 </div>
-
       <DriverDetailnav />
 
       <div className="flex justify-center items-center gap-32 mt-8">

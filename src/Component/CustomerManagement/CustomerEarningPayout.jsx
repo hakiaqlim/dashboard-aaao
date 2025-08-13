@@ -140,7 +140,7 @@ const CustomerEarningPayout = () => {
                 <td className="w-[20%] px-4 py-3 text-center">{item.payment}</td>
                 <td className="w-[20%] px-4 py-3">
                   <div className="flex items-center gap-3 justify-center">
-                    <button className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                    <button className="bg-yellow-400 text-[#013220] px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
                      View
                     </button>
                   </div>

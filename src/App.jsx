@@ -67,6 +67,7 @@ import TeamMLMReport from "./Component/Reports/TeamMLMReport/TeamMLMReport";
 import WithdrawalTransactionLog from "./Component/Reports/WithdrawalAndTransactionLog/WithdrawalTransactionLog";
 import CustomReportGenerator from "./Component/Reports/CustomReportGenerator/CustomReportGenerator";
 import CustomReportTable from "./Component/Reports/CustomReportGenerator/CustomReportTable";
+import CustomerReferralTree from "./Component/CustomerManagement/CustomerReferralTree";
 
 
 // Step 1: Move Layout outside of App
@@ -107,13 +108,11 @@ const AppRoutes = () => {
         <Route path="/customermanagement" element={<CustomerManagement />} />
         <Route path="/customerprofile" element={<CustomerProfile />} />
         <Route path="/customerhistory" element={<CustomerHistory />} />
-        <Route
-          path="/customerearningpayout"
-          element={<CustomerEarningPayout />}
-        />
+        <Route path="/customerearningpayout" element={<CustomerEarningPayout />}/>
         <Route path="/customermlm" element={<CustomerMLM />} />
         <Route path="/customerrating" element={<CustomerRatings />} />
         <Route path="/customercomplain" element={<CustomerComplain />} />
+        <Route path="/customerreferraltree" element={<CustomerReferralTree />} />
         {/* Career Management */}
         <Route path="/proposalmanagement" element={<ProposalManagement />} />
         <Route path="/agreementrecord" element={<AgreementRecord />} />

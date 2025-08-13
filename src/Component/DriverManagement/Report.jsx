@@ -6,6 +6,8 @@ import { FaCar } from "react-icons/fa";
 import { FcCancel } from "react-icons/fc";
 import { PiMoneyLight } from "react-icons/pi";
 import { MdOutlineAssignmentLate } from "react-icons/md";
+import { TiArrowBackOutline } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 const data = [
   {

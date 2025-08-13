@@ -35,7 +35,7 @@ const CustomerMlmTablePopup = ({ onClose }) => {
         {/* Done button */}
         <button
           onClick={onClose}
-          className="mt-6 bg-yellow-400 text-black px-8 py-2 rounded-full font-semibold hover:bg-yellow-300 transition"
+          className="mt-6 bg-yellow-400 text-[#013220] px-8 py-2 rounded-full font-semibold hover:bg-yellow-300 transition"
         >
           DONE
         </button>

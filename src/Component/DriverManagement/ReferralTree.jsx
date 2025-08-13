@@ -1,6 +1,9 @@
 // ReferralTree.jsx
 import React from 'react';
 import { treeData } from './RefferalTreeData';
+import { Link } from 'react-router-dom';
+import { TiArrowBackOutline } from 'react-icons/ti';
+import DriverDetailnav from './DriverDetailnav';
 
 const AvatarNode = ({ image }) => (
   <div className="flex flex-col items-center relative z-10">
@@ -10,7 +13,7 @@ const AvatarNode = ({ image }) => (
 
 const renderTree = (node) => {
   return (
-    <div className="flex flex-col items-center relative">
+    <div className="flex flex-col items-center relative ">
       {/* Avatar Node */}
       <AvatarNode image={node.image} />
 
@@ -49,9 +52,12 @@ const renderTree = (node) => {
 
 const ReferralTree = () => {
   return (
-    <div className="min-h-screen bg-[#013220] py-10 px-4 text-white overflow-x-auto">
+    <>
+        <DriverDetailnav/> 
+    <div className="min-h-screen bg-[#013220] py-10 px-4  overflow-x-auto">
       <div className="flex justify-center">{renderTree(treeData)}</div>
     </div>
+    </>
   );
 };
 

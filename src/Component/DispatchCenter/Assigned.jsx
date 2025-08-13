@@ -3,14 +3,14 @@ import { FaRegEye } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
-const DispatchTable = () => {
+const Assigned = () => {
     const tabledata = [
         {
             id:1,
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Assigned',
            
         },
         {
@@ -18,7 +18,7 @@ const DispatchTable = () => {
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Assigned',
            
         },
         {
@@ -26,7 +26,7 @@ const DispatchTable = () => {
             name:'Alice Smith',
             pickup:'Pickup:Dubai',
             Dropoff:'Drop_off:Sharjah',
-            status:'Active',
+            status:'Assigned',
             
         },
     ]
@@ -55,7 +55,7 @@ const DispatchTable = () => {
 </td>
         <td className='text-sm px-4 py-2'>{item.status}</td>
         <td className='px-4 py-2 flex justify-center'>
-  <Link to={'/livelocation'} className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-[#013220] hover:bg-yellow-300 transition-all whitespace-nowrap'>
+  <Link to={'/livelocation'} className='inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-yellow-400 rounded-full text-black hover:bg-yellow-300 transition-all whitespace-nowrap'>
     <FaRegEye className='text-sm' />
     Live Location
   </Link>
@@ -69,4 +69,4 @@ const DispatchTable = () => {
   )
 }
 
-export default DispatchTable
+export default Assigned

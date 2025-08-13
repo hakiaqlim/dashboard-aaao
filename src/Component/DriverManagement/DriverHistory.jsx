@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DriverDetailnav from "./DriverDetailnav";
+import { TiArrowBackOutline } from "react-icons/ti";
 
 const data = [
   {
@@ -35,8 +36,11 @@ const data = [
 const DriverHistory = () => {
   return (
     <>
-        <div>    
+        <div>
+             
   <DriverDetailnav/> 
+ 
+       
 <div className=' pt-4'>
           <table className="w-full text-sm text-left">
             <thead>

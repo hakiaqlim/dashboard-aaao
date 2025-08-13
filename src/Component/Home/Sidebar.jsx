@@ -75,10 +75,6 @@ const Sidebar = () => {
           <MdOutlineIndeterminateCheckBox size={20} />
           <span>Fraud Detection</span>
         </Link>
-        <Link to='/ambassadorpanel' className={linkClasses('/ambassadorpanel')}>
-          <GiCaptainHatProfile size={20} />
-          <span>Ambassador Panel</span>
-        </Link>
         <Link to='/paymentoverview' className={linkClasses('/paymentoverview')}>
           <RiWallet3Fill size={20} />
           <span>Wallet & Panel</span>

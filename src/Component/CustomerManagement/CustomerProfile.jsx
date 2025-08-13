@@ -63,7 +63,7 @@ const CustomerProfile = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="w-[20%] flex justify-center bg-black pt-0 rounded p-1">
+        <div className="w-[20%] flex justify-center bg-yellow-200 pt-0 rounded p-1">
           <img
             src="https://randomuser.me/api/portraits/men/75.jpg"
             alt="Profile"
@@ -89,8 +89,8 @@ const CustomerProfile = () => {
                 </div>
               </div>
               <div className='flex justify-center gap-4 mt-4'>
-                <button className='px-6 font-semibold py-1 text-sm rounded-full text-black bg-yellow-400'>Accept</button>
-                <button className='px-6 font-semibold py-1 text-sm rounded-full text-black bg-yellow-400'>Reject</button>
+                <button className='px-6 font-semibold py-1 text-sm rounded-full text-[#013220] bg-yellow-400'>Accept</button>
+                <button className='px-6 font-semibold py-1 text-sm rounded-full text-[#013220] bg-yellow-400'>Reject</button>
               </div>
             </div>
           ))}

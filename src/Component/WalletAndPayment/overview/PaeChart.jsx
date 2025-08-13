@@ -1,36 +1,64 @@
-import React from 'react';
-import Chart from 'react-apexcharts';
+import React from "react";
+import { Pie } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend
+} from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+
+ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 const PaeChart = () => {
-  const series = [400, 200, 100]; // Active, Inactive, Pending
-  const options = {
-    chart: {
-      type: 'pie',
-    },
-    labels: ['Active', 'Inactive', 'Pending'],
-    colors: ['#13B255', '#FBBF24', '#EF4444'],
-    legend: {
-      position: 'bottom',
-    },
-    dataLabels: {
-      enabled: true,
-    },
+  const data = {
+    labels: ["CRR", "Ambassador", "Platinum" , ""],
+    datasets: [
+      {
+        data: [20, 40, 15,60], // Adjust slice proportions
+        backgroundColor: ["#FFD700", "#00FF00", "#FF0000", "#174332" ],
+        borderWidth: 0,
+        borderColor: [
+          "rgba(255, 215, 0, 1)", // Gold border
+          "rgba(255, 215, 0, 1)",
+          "rgba(255, 215, 0, 1)"
+        ],
+        hoverOffset: 10,
+      },
+    ],
   };
 
-  const rows = [
-    { name: 'Hamza Abbas', id: '9347837', status: 'Active' },
-    { name: 'Ali Raza', id: '9347838', status: 'Inactive' },
-    { name: 'Sara Khan', id: '9347839', status: 'Pending' },
-  ];
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { enabled: true },
+      datalabels: {
+        color: "#000",
+        font: { size: 10, weight: "bold" },
+        formatter: (value, context) => {
+          return context.chart.data.labels[context.dataIndex];
+        },
+      },
+    },
+    layout: {
+      padding: 20
+    }
+  };
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 items-start justify-start p-4">
-      {/* Pie Chart */}
-      <div className="w-64">
-        <Chart options={options} series={series} type="pie" width="100%" />
+    <div
+      style={{
+       
+        padding: "20px",
+        borderRadius: "10px",
+        display: "flex",
+        justifyContent: "center"
+      }}
+    >
+      <div style={{ width: "300px" }}>
+        <Pie data={data} options={options} />
       </div>
-
-    
     </div>
   );
 };

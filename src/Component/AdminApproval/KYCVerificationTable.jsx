@@ -86,7 +86,7 @@ const KYCVerificationTable = () => {
                     <div className="flex items-center gap-2">
                       <MdCancel className="cursor-pointer hover:text-red-500" size={20} />
                       <FaCheck className="cursor-pointer hover:text-green-500" size={16} />
-                      <button className="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm hover:bg-yellow-300">
+                      <button className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full text-sm hover:bg-yellow-300">
                         View
                       </button>
                     </div>

@@ -12,11 +12,20 @@ const DriverDetailnav = () => {
 
   return (
     <div className="px-10">
-      {/* Back Button */}
-      <div className="flex items-center gap-2 py-4 cursor-pointer" onClick={() => navigate(-1)}>
-        <TiArrowBackOutline size={30} className="text-lg" />
-        <span className="text-lg font-semibold">Back</span>
-      </div>
+     {/* Back Button */}
+<div className="flex items-center gap-2 pb-6">
+  <Link 
+    to={location.pathname === '/driverprofile' 
+         ? '/drivermanagement'  // If on profile, go to management
+         : '/driverprofile'      // Otherwise, go to profile
+    }
+    className='flex items-center gap-2 cursor-pointer'
+  >
+    <TiArrowBackOutline size={30} className="text-lg" />
+    <span className="text-lg font-semibold">Back</span>
+  </Link>
+</div>
+
 
       {/* Navigation Tabs */}
       <div className="flex justify-between items-center border-b border-yellow-400">

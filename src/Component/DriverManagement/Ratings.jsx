@@ -1,5 +1,7 @@
 import React from 'react'
 import DriverDetailnav from './DriverDetailnav'
+import { TiArrowBackOutline } from 'react-icons/ti'
+import { Link } from 'react-router-dom'
 const data = [
   {
     image:'',
@@ -28,8 +30,7 @@ const Ratings = () => {
   <option value="low">Low</option>
 </select>
 </div>
-      <DriverDetailnav/>
-      
+      <DriverDetailnav/>   
       <div className='px-8 py-6'>
 <div className=''>
 

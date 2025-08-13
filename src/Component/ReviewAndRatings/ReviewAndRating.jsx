@@ -65,7 +65,6 @@ const ReviewAndRating = () => {
 
         {/* Pie Chart */}
         <div className="w-full max-w-5xl">
-          <h2 className="font-semibold mb-4">Pie Chart:</h2>
           <PieChart />
         </div>
 

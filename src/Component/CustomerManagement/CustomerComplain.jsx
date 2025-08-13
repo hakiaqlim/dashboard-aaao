@@ -9,7 +9,6 @@ const data = [
     issuesummary:'Driver was late',
     status:'Open',
    assignedto:'Admin A',
-    action: "View",
   },
   {
     id: 1,
@@ -17,7 +16,6 @@ const data = [
     issuesummary:'Driver was late',
     status:'Open',
    assignedto:'Admin A',
-    action: "View",
   },
   {
     id: 1,
@@ -25,7 +23,6 @@ const data = [
     issuesummary:'Driver was late',
     status:'Open',
    assignedto:'Admin A',
-    action: "View",
   },
 ];
 
@@ -60,8 +57,8 @@ const CustomerComplain = () => {
                   <td className="px-4 py-2">
                     <div className="flex items-center gap-3 justify-center">
                   
-                      <button onClick={()=> setPopup(true)} className="bg-yellow-400 text-black px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
-                        {item.action}
+                      <button onClick={()=> setPopup(true)} className="bg-yellow-400 text-[#013220] px-4 py-1.5 cursor-pointer rounded-full text-xs font-medium">
+                      View
                       </button>
                     
                     </div>

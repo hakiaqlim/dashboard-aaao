@@ -66,7 +66,7 @@ const ComplainResolution = () => {
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-2">
-                      <Link to={`/complaindetail/${item.id}`} className="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm hover:bg-yellow-300">
+                      <Link to={`/complaindetail/${item.id}`} className="bg-yellow-400 text-[#013220] px-4 py-1 rounded-full text-sm hover:bg-yellow-300">
                         View
                       </Link>
                     </div>

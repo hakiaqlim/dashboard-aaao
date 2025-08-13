@@ -79,7 +79,7 @@ const DriverProfile = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="w-[20%] flex justify-center bg-black rounded p-1">
+        <div className="w-[20%] flex justify-center bg-yellow-200 rounded p-1">
           <img
             src="https://randomuser.me/api/portraits/men/75.jpg"
             alt="Profile"
@@ -105,8 +105,8 @@ const DriverProfile = () => {
                 </div>
               </div>
               <div className='flex justify-center gap-4 mt-4'>
-                <button className='px-6 font-semibold py-1 text-sm rounded-full text-black bg-yellow-400'>Accept</button>
-                <button className='px-6 font-semibold py-1 text-sm rounded-full text-black bg-yellow-400'>Reject</button>
+                <button className='px-6 font-semibold py-1 text-sm rounded-full text-[#013220] bg-yellow-400'>Accept</button>
+                <button className='px-6 font-semibold py-1 text-sm rounded-full text-[#013220] bg-yellow-400'>Reject</button>
               </div>
             </div>
           ))}
@@ -115,8 +115,8 @@ const DriverProfile = () => {
 
       {/* Accept/Reject All Buttons */}
       <div className='flex justify-center gap-8 p-8'>
-        <button className='rounded-full bg-yellow-400 px-4 py-1.5 font-semibold text-black'>Accept All</button>
-        <button className='rounded-full bg-yellow-400 px-6 py-1.5 text-black font-semibold'>Reject</button>
+        <button className='rounded-full bg-yellow-400 px-4 py-1.5 font-semibold text-[#013220]'>Accept All</button>
+        <button className='rounded-full bg-yellow-400 px-6 py-1.5 text-[#013220] font-semibold'>Reject</button>
       </div>
     </div>
   )

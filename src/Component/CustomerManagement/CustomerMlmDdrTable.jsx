@@ -68,7 +68,7 @@ const CustomerMlmDdrTable = () => {
                 <td className="px-4 py-2">
                   <button
                     onClick={() => setShowPopup(true)}
-                    className='bg-yellow-400 px-4 py-2 text-[11px] font-semibold hover:bg-yellow-200 text-black rounded-full'
+                    className='bg-yellow-400 px-4 py-2 text-[11px] font-semibold hover:bg-yellow-200 text-[#013220] rounded-full'
                   >
                    View Detail
                   </button>
