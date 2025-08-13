@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { VscCalendar } from "react-icons/vsc";
 import DispatchTable from "./DispatchTable";
 import Sidebar from "../Home/Sidebar";
 import Assigned from "./Assigned";
 import Completed from "./Completed";
 import Cancelled from "./Cancelled";
+import { SlRefresh } from "react-icons/sl";
 
 const dataTabs = ["All", "Assigned", "Completed", "Cancelled"];
 
@@ -76,6 +75,7 @@ const Dispatch = () => {
             onChange={(e) => setDate(e.target.value)}
             className="border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"
           />
+          <button  className="flex gap-2 items-center border border-yellow-400 rounded-full px-4 py-2 bg-transparent text-yellow-400 focus:outline-none"><SlRefresh/> Refresh</button>
         </div>
 
         {/* Status Tabs */}

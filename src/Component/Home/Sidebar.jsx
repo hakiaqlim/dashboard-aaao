@@ -23,8 +23,8 @@ const Sidebar = () => {
   const linkClasses = (path) =>
     `px-4 py-2 rounded-full border border-[#DDC104] transition-all duration-300 font-medium text-lg flex items-center gap-3 ${
       location.pathname === path
-        ? "bg-[#DDC104] text-black shadow-md"
-        : " hover:bg-yellow-100 hover:text-black"
+        ? "bg-[#DDC104] text-[#013220] shadow-md"
+        : " hover:bg-yellow-100 hover:text-[#013220]"
     }`;
 
   return (
