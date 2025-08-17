@@ -4,6 +4,7 @@ import CrrTeamStructureChart from './CrrTeamStructureChart';
 import { CiUser } from "react-icons/ci";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch"; // MUI Switch
+import { RiFocus2Line } from "react-icons/ri";
 
 const label = { inputProps: { 'aria-label': 'Auto Reset Switch' } };
 
@@ -15,7 +16,7 @@ const data = [
     chartData: [20, 40, 86, 60, 90]
   },
   {
-    icon: CiUser,
+    icon: RiFocus2Line ,
     title: 'TGP',
     earn: '3600 / 400',
     chartData: [10, 22, 34, 25, 15]

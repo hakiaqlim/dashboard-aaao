@@ -1,14 +1,13 @@
-// Level1Table.jsx
 import React, { useState } from 'react';
 import MlmPopupCard from './MlmPopupCard';
 
-const level1Data = [
-  { id: 1, name: 'Smith Joy', amount: 1000, date: '4/July/25', source: 'Driver', action: 'View Detail' },
-  { id: 2, name: 'John Doe', amount: 1500, date: '5/July/25', source: 'Rider', action: 'View Detail' },
+const level3Data = [
+  { id: 1, name: 'Michael Lee', amount: 2000, date: '8/July/25', source: 'Driver',  },
+  { id: 2, name: 'Sophia Davis', amount: 2500, date: '9/July/25', source: 'Rider',  },
 ];
 
 const Level3Table = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  const [selectedUser, setSelectedUser] = useState(null);
 
   return (
     <>
@@ -25,7 +24,7 @@ const Level3Table = () => {
             </tr>
           </thead>
           <tbody>
-            {level1Data.map((item, index) => (
+            {level3Data.map((item, index) => (
               <tr key={index} className="text-left">
                 <td className="px-4 py-2">00{item.id}</td>
                 <td className="px-4 py-2">{item.name}</td>
@@ -34,10 +33,10 @@ const Level3Table = () => {
                 <td className="px-4 py-2">{item.source}</td>
                 <td className="px-4 py-2">
                   <button
-                    onClick={() => setShowPopup(true)}
-                    className='bg-yellow-400 px-4 py-2 text-[11px] font-semibold hover:bg-yellow-200 text-black rounded-full'
+                    onClick={() => setSelectedUser(item)}
+                    className="bg-yellow-400 px-4 py-2 text-[11px] font-semibold hover:bg-yellow-200 text-black rounded-full"
                   >
-                    {item.action}
+                    View Detail
                   </button>
                 </td>
               </tr>
@@ -46,7 +45,13 @@ const Level3Table = () => {
         </table>
       </div>
 
-      {showPopup && <MlmPopupCard onClose={() => setShowPopup(false)} />}
+      {/* Popup */}
+      {selectedUser && (
+        <MlmPopupCard
+          user={selectedUser}
+          onClose={() => setSelectedUser(null)}
+        />
+      )}
     </>
   );
 };
